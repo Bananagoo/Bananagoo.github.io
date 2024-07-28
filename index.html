@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Langille</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">K. Langille</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="resume-button" onclick="downloadResume()">Resume</button>
+                    <script>
+                        function downloadResume() {
+                            window.open('Katherine_Resume_2024.pdf', '_blank');
+                        }
+                    </script>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm Katie!</h1>
+            <p>Learn more about me by scrolling down or <a href="#about-me" class="learn-more">clicking here.</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- About Me -->
+<div id="about-me" class="about-me">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p>Hi there, welcome to my website! I am currently studying Biomedical Engineering at the University of Waterloo. I enjoy student leadership, first aid, hockey, and volleyball. I am passionate about learning and love to get involved with various projects and organizations in my community. Feel free to explore this page to learn more about my experiences and projects! :)</p>
+            </div>
+            <div class="about-col-1">
+                <img src="images/headshot.JPG" alt="Katie's headshot">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div id="experience" class="experience-section">
+    <div class="container">
+        <h1>Experience</h1>
+        <div class="experience-item">
+            <h2>Cognitive Engineering Research Assistant</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel1">
+                        <button class="prev" onclick="prevImage('carousel1')">&#10094;</button>
+                        <img src="images/headset.jpeg" alt="EEG Headset Image" class="carousel-image">
+                        <img src="images/eeg.jpeg" alt="EEG Data Image" class="carousel-image">
+                        <img src="images/driving.jpeg" alt="Driving Simulation Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel1')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">Description for experience 1.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h2>Manager</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel2">
+                        <button class="prev" onclick="prevImage('carousel2')">&#10094;</button>
+                        <img src="images/pool1.jpeg" alt="Pool Image" class="carousel-image">
+                        <img src="images/pool2.jpeg" alt="Hand Prints Image" class="carousel-image">
+                        <img src="images/pool3.jpeg" alt="Pool Staff Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">Description for experience 2.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h2>Responder</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel3">
+                        <button class="prev" onclick="prevImage('carousel3')">&#10094;</button>
+                        <img src="images/fr1.jpeg" alt="Responder Uniform Image" class="carousel-image">
+                        <img src="images/fr2.jpeg" alt="Fake Burn Victim Image" class="carousel-image">
+                        <img src="images/fr3.jpeg" alt="Responder Team Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel3')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">Description for experience 3.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Projects Section -->
+<div id="projects" class="projects-section">
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2>Psychology Experiment Game</h2>
+            <div class="project-content">
+                <img src="images/project1.jpg" alt="Project 1 Image" class="project-image">
+                <p class="project-description">Description for project 1.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>SnowFake</h2>
+            <div class="project-content">
+                <img src="images/SnowFake.png" alt="SnowFake Image" class="project-image">
+                <p class="project-description">Description for project 2.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>3D Puzzle</h2>
+            <div class="project-content">
+                <img src="images/project3.jpg" alt="Project 3 Image" class="project-image">
+                <p class="project-description">Description for project 3.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Arthritis Pill Bottle</h2>
+            <div class="project-content">
+                <img src="images/project4.jpg" alt="Project 4 Image" class="project-image">
+                <p class="project-description">Description for project 4.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Garbage Collection Robot</h2>
+            <div class="project-content">
+                <img src="images/project5.jpg" alt="Project 5 Image" class="project-image">
+                <p class="project-description">Description for project 5.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Semantic Field Analyzer</h2>
+            <div class="project-content">
+                <img src="images/project6.jpg" alt="Project 6 Image" class="project-image">
+                <p class="project-description">Description for project 6.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="contact-section">
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="images/linkedin.png" alt="LinkedIn Logo" class="contact-logo">
+                <a href="https://www.linkedin.com/in/katherine-langille/" target="_blank">www.linkedin.com/in/katherine-langille/</a>
+            </div>
+            <div class="contact-item">
+                <img src="images/email.png" alt="Email Logo" class="contact-logo">
+                <a href="mailto:klangill@uwaterloo.ca">klangill@uwaterloo.ca</a>
+            </div>
+            <div class="contact-item">
+                <img src="images/phone.png" alt="Phone Logo" class="contact-logo">
+                <a href="tel:+16136688713">(613) 668-8713</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let currentIndex = {};
+    
+    function initCarousel(carouselId) {
+        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        if (images.length > 0) {
+            images[0].style.display = 'block';
+            currentIndex[carouselId] = 0;
+        }
+    }
+    
+    function showImage(carouselId, index) {
+        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        images.forEach((img, idx) => {
+            img.style.display = (idx === index) ? 'block' : 'none';
+        });
+        currentIndex[carouselId] = index;
+    }
+    
+    function prevImage(carouselId) {
+        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const newIndex = (currentIndex[carouselId] === 0) ? images.length - 1 : currentIndex[carouselId] - 1;
+        showImage(carouselId, newIndex);
+    }
+    
+    function nextImage(carouselId) {
+        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const newIndex = (currentIndex[carouselId] === images.length - 1) ? 0 : currentIndex[carouselId] + 1;
+        showImage(carouselId, newIndex);
+    }
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        initCarousel('carousel1');
+        initCarousel('carousel2');
+        initCarousel('carousel3');
+    });
+    </script>
+    
+</body>
+</html>
