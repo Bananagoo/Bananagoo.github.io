@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katie Langille</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="logo">K. Langille</h1>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="resume-button" onclick="downloadResume()">Resume</button>
+                    <script>
+                        function downloadResume() {
+                            window.open('Katherine_Resume_2025.pdf', '_blank');
+                        }
+                    </script>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm Katie!</h1>
+            <p>Learn more about me by scrolling down or <a href="#about-me" class="learn-more">clicking here.</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- About Me -->
+<div id="about-me" class="about-me">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1>About Me</h1>
+                <p>Hi there, welcome to my website! I am currently studying Biomedical Engineering at the University of Waterloo. I enjoy student leadership, first aid, hockey, and volleyball. I am passionate about learning and love to get involved with various projects and organizations in my community. Feel free to explore this page to learn more about my experiences and projects! :)</p>
+            </div>
+            <div class="about-col-1">
+                <img src="headshot.JPG" alt="Katie's headshot">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div id="experience" class="experience-section">
+    <div class="container">
+        <h1>Experience</h1>
+        <div class="experience-item">
+            <h2>Data Science and Process Mining Analyst</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel1">
+                        <button class="prev" onclick="prevImage('carousel1')">&#10094;</button>
+                        <img src="bpmn.png" alt="BPMN Process Model Example" class="carousel-image">
+                        <img src="powerBIDashboard.png" alt="Power BI Dashboard Example" class="carousel-image">
+                        <img src="processmapdisco.webp" alt="Process Map Example" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel1')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">As a Data Science & Process Mining Analyst at Transport Canada, I focus on analyzing and optimizing business processes through data-driven insights and process mining techniques. My role involves working with large-scale process logs, leveraging Python (Pandas, NumPy), and process mining tools to identify inefficiencies, uncover trends, and improve workflow efficiency. I apply statistical analysis and machine learning techniques to evaluate process performance and assess the impact of operational changes. Beyond analytics, I collaborate with cross-functional teams, translating complex data findings into actionable recommendations. I also develop interactive reports and dashboards, effectively communicating insights to technical and non-technical stakeholders to support data-driven decision-making and continuous improvement.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h2>Cognitive Engineering Research Assistant</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel1">
+                        <button class="prev" onclick="prevImage('carousel1')">&#10094;</button>
+                        <img src="headset.JPG" alt="EEG Headset Image" class="carousel-image">
+                        <img src="eeg.JPG" alt="EEG Data Image" class="carousel-image">
+                        <img src="driving.JPG" alt="Driving Simulation Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel1')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">As a Cognitive Engineering Research Intern at the ACE Lab, I focused on enhancing the interaction between humans and complex systems through cognitive principles. My work was centered on two main areas. First, I contributed to the interdisciplinary <a href="https://carleton.ca/sense-md/" target="_blank">SENSE-APP project</a>, aimed at developing an app for older drivers in collaboration with another Carleton lab and the National Research Council (NRC). This project sought to assess older drivers' risk using AI models and telematics car data, and then communicate this information to the drivers to help them improve their driving safety and extend their driving years. I analyzed qualitative data from focus groups using QDA Miner, categorizing and tagging the data to identify key themes and quantify their importance, which informed the app’s UX/UI design. Additionally, I supported research projects on human-machine interactions in autonomous driving, led by master’s students in the lab. I developed experimental setups using Prepar3D to simulate realistic driving scenarios and coded audio stimuli for EEG data collection. I also created a situational awareness task using the Godot game engine to assess participants' recall of hazard scenes for an ongoing study.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h2>Manager</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel2">
+                        <button class="prev" onclick="prevImage('carousel2')">&#10094;</button>
+                        <img src="pool1.jpeg" alt="Pool Image" class="carousel-image">
+                        <img src="pool2.jpeg" alt="Hand Prints Image" class="carousel-image">
+                        <img src="pool3.jpeg" alt="Pool Staff Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel2')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">As an Assistant Manager in 2022 and Manager in 2023, I oversaw the safety of over 100 patrons daily while running various programs and ensuring their quality. In this role, I managed a team of seven employees, handling scheduling and financial responsibilities. Additionally, I served as a lifeguard, swim instructor, and lifesaving course instructor, running and managing aquatic programs. Recently, I was appointed to the Board of Directors, where I actively contributed to shaping the reopening strategy and the planning and development of a new facility. For more information, please visit our <a href="https://www.mahonebaypool.com/" target="_blank">website</a>.</p>
+            </div>
+        </div>
+        <div class="experience-item">
+            <h2>Responder UW Campus Response Team</h2>
+            <div class="experience-content">
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel3">
+                        <button class="prev" onclick="prevImage('carousel3')">&#10094;</button>
+                        <img src="fr1.jpeg" alt="Responder Uniform Image" class="carousel-image">
+                        <img src="fr2.jpeg" alt="Fake Burn Victim Image" class="carousel-image">
+                        <img src="fr3.jpeg" alt="Responder Team Image" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel3')">&#10095;</button>
+                    </div>
+                </div>
+                <p class="experience-description">As a Responder with the University of Waterloo Campus Response Team from October 2023 to the present, I contribute to the safety and well-being of the university community by responding to medical and mental health emergencies during assigned shifts. During the winter term of 2024, I served as an Assistant Trainer, where I ran testing sessions and helped organize first aid and crisis management training. This role allowed me to further support and enhance the team's preparedness and effectiveness in handling various emergencies.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Projects Section -->
+<div id="projects" class="projects-section">
+    <div class="container">
+        <h1>Projects</h1>
+        <div class="project-item">
+            <h2>Psychology Experiment Game</h2>
+            <div class="project-content">
+                <img src="godot.png" alt="Godot Experiment Task Image" class="project-image">
+                <p class="project-description">Interactive situational awareness task designed for a psychology experiment. Created using the Godot game engine in GDScript, it features an automatically scored interactive task and participant logging. Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. (Note: Data and screenshots are saved to the device when the game is run locally through the Godot engine. See example data and screenshot <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.)</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>3D Puzzle</h2>
+            <div class="project-content">
+                <img src="beaver.jpeg" alt="Beaver Puzzle Image" class="project-image">
+                <p class="project-description">3D puzzle project created using SolidWorks and then 3D printed. Collaborated in a 5-member team to design a puzzle featuring a hockey-playing beaver figurine. I led the design of the base, incorporating perpendicular gears for seamless horizontal to vertical rotation. See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Arthritis Pill Bottle</h2>
+            <div class="project-content">
+                <img src="pill.png" alt="PillPivot Image" class="project-image">
+                <p class="project-description">Ergonomic pill bottle designed for individuals suffering from arthritis. Led a comprehensive iterative design process within a 6-member team, ensuring enhanced usability. Conducted needs assessment, engineering analysis, prototyping, and testing. Authored two detailed technical reports outlining project methodology and outcomes. Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>SnowFake</h2>
+            <div class="project-content">
+                <img src="SnowFake.png" alt="SnowFake Image" class="project-image">
+                <p class="project-description">Game of Life simulation in snowflake form following the mathematical model of snowflake replication by Norman Packard. Collaborated with three other students to develop the simulation in Python, using Git. I worked on the statistical modeling of snowflake generation and the presentation video. Won 1st place in a French national computer science competition, Les Trophées NSI. Find the code and documentation on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or learn more with our presentation <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">video</a> (french).</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Garbage Collection Robot</h2>
+            <div class="project-content">
+                <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image" class="project-image">
+                <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition’s Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <h2>Semantic Field Analyzer</h2>
+            <div class="project-content">
+                <img src="words.png" alt="Semantic Field Image" class="project-image">
+                <p class="project-description">Semantic field analyzer developed in Python utilizing web scraping. This tool allows users to input a word, retrieves relevant data from a word family website, and analyzes a novel to quantify occurrences of the specified word family.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact" class="contact-section">
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="linkedin.png" alt="LinkedIn Logo" class="contact-logo">
+                <a href="https://www.linkedin.com/in/katherine-langille/" target="_blank">www.linkedin.com/in/katherine-langille/</a>
+            </div>
+            <div class="contact-item">
+                <img src="email.png" alt="Email Logo" class="contact-logo">
+                <a href="mailto:klangill@uwaterloo.ca">klangill@uwaterloo.ca</a>
+            </div>
+            <div class="contact-item">
+                <img src="phone.png" alt="Phone Logo" class="contact-logo">
+                <a href="tel:+16136688713">(613) 668-8713</a>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

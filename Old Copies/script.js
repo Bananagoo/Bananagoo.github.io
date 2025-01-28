@@ -1,22 +1,25 @@
 // Track the current index for each carousel
 let currentIndex = {};
 
-// Initialize all carousels
+// Initialize the carousel
 function initCarousel(carouselId) {
     const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
     if (images.length > 0) {
         images.forEach((img, idx) => {
-            img.style.display = idx === 0 ? "block" : "none"; // Show the first image
+            img.classList.remove('active');
+            if (idx === 0) {
+                img.classList.add('active'); // Show the first image
+            }
         });
-        currentIndex[carouselId] = 0; // Start at the first image
+        currentIndex[carouselId] = 0;
     }
 }
 
-// Display the image at the specified index
+// Show a specific image in the carousel
 function showImage(carouselId, index) {
     const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
     images.forEach((img, idx) => {
-        img.style.display = idx === index ? "block" : "none"; // Toggle visibility
+        img.classList.toggle('active', idx === index);
     });
     currentIndex[carouselId] = index;
 }
@@ -35,14 +38,14 @@ function nextImage(carouselId) {
     showImage(carouselId, newIndex);
 }
 
-// Attach event listeners to all carousels on page load
+// Add event listeners for all carousels
 document.addEventListener("DOMContentLoaded", function () {
     const carousels = document.querySelectorAll(".carousel-container");
     carousels.forEach(carousel => {
-        const carouselId = carousel.querySelector(".carousel").id;
+        const carouselId = carousel.getAttribute("id");
         initCarousel(carouselId);
 
-        // Add click events to navigation buttons
+        // Add click events for previous and next buttons
         const prevButton = carousel.querySelector(".prev");
         const nextButton = carousel.querySelector(".next");
         if (prevButton && nextButton) {
