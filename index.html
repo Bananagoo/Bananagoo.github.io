@@ -58,7 +58,7 @@
     <div class="container">
         <h1>Experience</h1>
         <div class="experience-item">
-            <h2>CData Science and Process Mining Analyst</h2>
+            <h2>Data Science and Process Mining Analyst</h2>
             <div class="experience-content">
                 <div class="carousel-container">
                     <div class="carousel" id="carousel1">
@@ -190,44 +190,6 @@
         </div>
     </div>
 </div>
-
-<script>
-    let currentIndex = {};
-    
-    function initCarousel(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-        if (images.length > 0) {
-            images[0].style.display = 'block';
-            currentIndex[carouselId] = 0;
-        }
-    }
-    
-    function showImage(carouselId, index) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-        images.forEach((img, idx) => {
-            img.style.display = (idx === index) ? 'block' : 'none';
-        });
-        currentIndex[carouselId] = index;
-    }
-    
-    function prevImage(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-        const newIndex = (currentIndex[carouselId] === 0) ? images.length - 1 : currentIndex[carouselId] - 1;
-        showImage(carouselId, newIndex);
-    }
-    
-    function nextImage(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
-        const newIndex = (currentIndex[carouselId] === images.length - 1) ? 0 : currentIndex[carouselId] + 1;
-        showImage(carouselId, newIndex);
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-        initCarousel('carousel1');
-        initCarousel('carousel2');
-        initCarousel('carousel3');
-    });
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
