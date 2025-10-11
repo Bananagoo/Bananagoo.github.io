@@ -10,28 +10,30 @@ html {
 }
 
 body {
-    background: #eae1d6;
-    color: #44445c; /* Katie Langille in header color */
+    background: #f4f7fa;
+    color: #1a2636; /* Professional techy text color */
 }
 
+/* Header background will be updated in HTML to use LinkedIn.jpg */
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(../KatieImage.png);
-    background-size: 40% auto; /* Reduce the image size to half */
-    background-position: left bottom; /* Position the image more to the left */
-    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-    padding-top: 80px; /* Add padding to account for the fixed nav */
+    background-image: url(LinkedIn.jpg);
+    background-color: #1a2636;
+    background-size: 40% auto;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    padding-top: 80px;
 }
 
 nav {
     width: 100%;
-    position: fixed; /* Fix the navigation bar at the top */
+    position: fixed;
     top: 0;
     left: 0;
-    background-color: #eae1d6; /* Same background color as the body */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: add a shadow for better visibility */
-    z-index: 1000; /* Ensure the nav stays on top of other elements */
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(26, 38, 54, 0.08);
+    z-index: 1000;
 }
 
 .container {
@@ -63,7 +65,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #063970; /* Category tags color */
+    color: #00bfae; /* Accent color */
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -73,7 +75,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #766c5f; /* Category tag underline color */
+    background: #00bfae;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -92,20 +94,20 @@ nav ul li button {
     cursor: pointer;
 }
 
-.resume-button {
+ .resume-button {
     font-size: 16px;
-    color: #44445c;
-    border: 2px solid #44445c;
-    background-color: transparent;
+    color: #fff;
+    border: 2px solid #00bfae;
+    background-color: #00bfae;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     outline: none;
 }
 
-.resume-button:hover {
-    background-color: #44445c;
-    color: #fff;
+ .resume-button:hover {
+    background-color: #1a2636;
+    color: #00bfae;
 }
 
 .resume-button:active {
@@ -124,20 +126,20 @@ nav ul li button {
     font-size: 60px;
 }
 
-.header-text a.learn-more {
-    color: #446a96;
+ .header-text a.learn-more {
+    color: #00bfae;
     text-decoration: none;
     transition: color 0.3s;
 }
 
-.header-text a.learn-more:hover {
-    color: #44445c;
+ .header-text a.learn-more:hover {
+    color: #1a2636;
 }
 
 /* About Me Section */
-#about-me {
+ #about-me {
     padding: 80px 0;
-    color: #ababab;
+    color: #1a2636;
 }
 
 .about-me .row {
@@ -162,20 +164,20 @@ nav ul li button {
     padding-right: 20px;
 }
 
-.about-col-2 h1 {
-    color: #44445c;
+ .about-col-2 h1 {
+    color: #00bfae;
     font-size: 36px;
 }
 
-.about-col-2 p {
-    color: #44445c;
+ .about-col-2 p {
+    color: #1a2636;
     font-size: 18px;
 }
 
 /* Sections */
-#experience, #projects, #more, #contact{
+ #experience, #projects, #more, #contact{
     padding: 80px 0;
-    color: #44445c;
+    color: #1a2636;
 }
 
 #experience .container, #projects .container, #more .container {
@@ -216,10 +218,10 @@ nav ul li button {
     text-decoration: underline;
 }
 
-.experience-section {
+ .experience-section {
     padding: 80px 0;
-    background-color: #eae1d6;
-    color: #44445c;
+    background-color: #f4f7fa;
+    color: #1a2636;
 }
 
 .experience-section h1 {
@@ -228,18 +230,19 @@ nav ul li button {
     margin-bottom: 40px;
 }
 
-.experience-item {
-    background: #f7f3ed;
-    border: 1px solid #ddd;
+ .experience-item {
+    background: #fff;
+    border: 1px solid #00bfae;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(26, 38, 54, 0.08);
 }
 
-.experience-item h2 {
+ .experience-item h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #00bfae;
 }
 
 .experience-content {
@@ -274,19 +277,19 @@ nav ul li button {
     display: block;
 }
 
-.prev, .next {
+ .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: auto;
     padding: 16px;
-    color: #44445c;
+    color: #fff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.3s;
     user-select: none;
-    background-color: eae1d6(255, 255, 255, 0.5);
+    background-color: #00bfae;
     border: none;
     outline: none;
     z-index: 1;
@@ -302,9 +305,9 @@ nav ul li button {
     border-radius: 3px 0 0 3px;
 }
 
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: eae1d6;
+ .prev:hover, .next:hover {
+    background-color: #1a2636;
+    color: #00bfae;
 }
 
 .experience-description {
@@ -313,10 +316,10 @@ nav ul li button {
     flex: 1; /* Take up remaining space */
 }
 
-.projects-section {
+ .projects-section {
     padding: 80px 0;
-    background-color: #eae1d6;
-    color: #44445c;
+    background-color: #f4f7fa;
+    color: #1a2636;
 }
 
 .projects-section h1 {
@@ -325,18 +328,19 @@ nav ul li button {
     margin-bottom: 40px;
 }
 
-.project-item {
-    background: #f7f3ed;
-    border: 1px solid #ddd;
+ .project-item {
+    background: #fff;
+    border: 1px solid #00bfae;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(26, 38, 54, 0.08);
 }
 
-.project-item h2 {
+ .project-item h2 {
     font-size: 24px;
     margin-bottom: 20px;
+    color: #00bfae;
 }
 
 .project-content {
@@ -357,4 +361,164 @@ nav ul li button {
     font-size: 16px;
     line-height: 1.6;
     flex: 1; /* Take up remaining space */
+}
+
+/* Collapsible Content Styles */
+.collapsible-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+.collapsible-header:hover {
+    opacity: 0.8;
+}
+
+.toggle-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00bfae;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon.active {
+    transform: rotate(180deg);
+}
+
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease, margin-top 0.3s ease;
+    opacity: 0;
+}
+
+.collapsible-content.active {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+/* Carousel Improvements */
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicator.active {
+    background-color: #00bfae;
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .header-text {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 40%;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        transition: left 0.3s ease;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .about-me .row {
+        flex-direction: column;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex: 1;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .about-col-1 img {
+        max-width: 70%;
+    }
+
+    .experience-content, .project-content {
+        flex-direction: column;
+    }
+
+    .carousel-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 10px 5%;
+    }
+}
+
+/* Smooth Scroll Offset for Fixed Nav */
+html {
+    scroll-padding-top: 80px;
+}
+
+/* Hover Effects for Items */
+.experience-item, .project-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-item:hover, .project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 191, 174, 0.2);
 }

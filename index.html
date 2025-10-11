@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katie Langille</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href=            </div>
+        </div>
+        <div class="project-item">//fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -25,7 +27,7 @@
                     <button class="resume-button" onclick="downloadResume()">Resume</button>
                     <script>
                         function downloadResume() {
-                            window.open('Katherine_Resume_2025_2.0.pdf', '_blank');
+                            window.open('Katherine_Resume.pdf', '_blank');
                         }
                     </script>
                 </li>
@@ -47,7 +49,7 @@
                 <p>Hi there, welcome to my website! I am currently studying Biomedical Engineering at the University of Waterloo. I enjoy student leadership, first aid, hockey, and volleyball. I am passionate about learning and love to get involved with various projects and organizations in my community. Feel free to explore this page to learn more about my experiences and projects! :)</p>
             </div>
             <div class="about-col-1">
-                <img src="headshot.JPG" alt="Katie's headshot">
+                <img src="LinkedIn.jpg" alt="Katie's LinkedIn photo">
             </div>
         </div>
     </div>
@@ -58,7 +60,42 @@
     <div class="container">
         <h1>Experience</h1>
         <div class="experience-item">
-            <h2>Data Science and Process Mining Analyst</h2>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Bioinformatics Software Research Student</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="experience-content">
+                    <p class="experience-description">
+                        <strong>The Hospital for Sick Children (SickKids) — Centre for Applied Genomics</strong> (Sep. 2025 – Dec. 2025)<br>
+                        Developed a <strong>machine learning pipeline</strong> to predict risk of cognitive, language, and motor outcomes in preterm infants using demographic, clinical, and MRI data.<br>
+                        Contributed to the design and iteration of a <strong>protein language model variant effect predictor</strong>, focusing on model interpretability through attention mechanism analysis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Data Science and Process Mining Analyst</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="experience-content">
+                    <p class="experience-description">
+                        <strong>Software Solutions, Transport Canada</strong> (Oct. 2024 – Mar. 2025)<br>
+                        Led two process mining projects and analyzed large-scale process logs using Python to identify inefficiencies in government workflows, delivering data-driven recommendations.<br>
+                        Designed a cost-effective, secure, and computationally efficient machine learning pipeline to perform classification tasks and reduce administrative burden.<br>
+                        Developed process conformance models and interactive dashboards, translating data insights into actionable strategies for cross-functional stakeholders.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="experience-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Data Science and Process Mining Analyst</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
             <div class="experience-content">
                 <div class="carousel-container">
                     <div class="carousel" id="carousel1">
@@ -73,7 +110,11 @@
             </div>
         </div>
         <div class="experience-item">
-            <h2>Cognitive Engineering Research Assistant</h2>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Cognitive Engineering Research Assistant</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
             <div class="experience-content">
                 <div class="carousel-container">
                     <div class="carousel" id="carousel2">
@@ -84,11 +125,21 @@
                         <button class="next" onclick="nextImage('carousel2')">&#10095;</button>
                     </div>
                 </div>
-                <p class="experience-description">As a Cognitive Engineering Research Intern at the ACE Lab, I focused on enhancing the interaction between humans and complex systems through cognitive principles. My work was centered on two main areas. First, I contributed to the interdisciplinary <a href="https://carleton.ca/sense-md/" target="_blank">SENSE-APP project</a>, aimed at developing an app for older drivers in collaboration with another Carleton lab and the National Research Council (NRC). This project sought to assess older drivers' risk using AI models and telematics car data, and then communicate this information to the drivers to help them improve their driving safety and extend their driving years. I analyzed qualitative data from focus groups using QDA Miner, categorizing and tagging the data to identify key themes and quantify their importance, which informed the app’s UX/UI design. Additionally, I supported research projects on human-machine interactions in autonomous driving, led by master’s students in the lab. I developed experimental setups using Prepar3D to simulate realistic driving scenarios and coded audio stimuli for EEG data collection. I also created a situational awareness task using the Godot game engine to assess participants' recall of hazard scenes for an ongoing study.</p>
+                                <p class="experience-description">As a Cognitive Engineering Research Intern at the ACE Lab, I focused on enhancing the interaction between humans and complex systems through cognitive principles. My work was centered on two main areas. First, I contributed to the interdisciplinary <a href="https://carleton.ca/sense-md/" target="_blank">SENSE-APP project</a>, aimed at developing an app for older drivers in collaboration with another Carleton lab and the National Research Council (NRC). This project sought to assess older drivers' risk using AI models and telematics car data, and then communicate this information to the drivers to help them improve their driving safety and extend their driving years. I analyzed qualitative data from focus groups using QDA Miner, categorizing and tagging the data to identify key themes and quantify their importance, which informed the app's UX/UI design. Additionally, I supported research projects on human-machine interactions in autonomous driving, led by master's students in the lab. I developed experimental setups using Prepar3D to simulate realistic driving scenarios and coded audio stimuli for EEG data collection. I also created a situational awareness task using the Godot game engine to assess participants' recall of hazard scenes for an ongoing study.</p>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+                        </p>
             </div>
         </div>
         <div class="experience-item">
-            <h2>Manager</h2>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Manager</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
             <div class="experience-content">
                 <div class="carousel-container">
                     <div class="carousel" id="carousel3">
@@ -100,10 +151,15 @@
                     </div>
                 </div>
                 <p class="experience-description">As an Assistant Manager in 2022 and Manager in 2023, I oversaw the safety of over 100 patrons daily while running various programs and ensuring their quality. In this role, I managed a team of seven employees, handling scheduling and financial responsibilities. Additionally, I served as a lifeguard, swim instructor, and lifesaving course instructor, running and managing aquatic programs. Recently, I was appointed to the Board of Directors, where I actively contributed to shaping the reopening strategy and the planning and development of a new facility. For more information, please visit our <a href="https://www.mahonebaypool.com/" target="_blank">website</a>.</p>
+                </div>
             </div>
         </div>
         <div class="experience-item">
-            <h2>Responder UW Campus Response Team</h2>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Responder UW Campus Response Team</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
             <div class="experience-content">
                 <div class="carousel-container">
                     <div class="carousel" id="carousel4">
@@ -115,6 +171,7 @@
                     </div>
                 </div>
                 <p class="experience-description">As a Responder with the University of Waterloo Campus Response Team from October 2023 to the present, I contribute to the safety and well-being of the university community by responding to medical and mental health emergencies during shifts and while on-call. During the winter term of 2024, I served as an Assistant Trainer, where I ran testing sessions and helped organize first aid and crisis management training. This role allowed me to further support and enhance the team's preparedness and effectiveness in handling various emergencies.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -126,35 +183,125 @@
     <div class="container">
         <h1>Projects</h1>
         <div class="project-item">
-            <h2>Psychology Experiment Game</h2>
-            <div class="project-content">
-                <img src="godot.png" alt="Godot Experiment Task Image" class="project-image">
-                <p class="project-description">Interactive situational awareness task designed for a psychology experiment. Created using the Godot game engine in GDScript, it features an automatically scored interactive task and participant logging. Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. (Note: Data and screenshots are saved to the device when the game is run locally through the Godot engine. See example data and screenshot <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.)</p>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>EMG-Controlled Prosthetic Hand</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="headset.JPG" alt="EMG Prosthetic Hand" class="project-image">
+                    <p class="project-description">
+                        Built a <strong>low-cost myoelectric prosthetic hand</strong> capable of grasping and manipulating objects via forearm muscle signals in a 3-person team.<br>
+                        Designed and implemented the electrical system and signal processing: amplified, filtered, and digitized weak EMG signals for real-time control using an Arduino.<br>
+                        Collaborated on a tendon-driven whippletree mechanism to distribute force evenly across fingers.<br>
+                        <a href="https://www.youtube.com/watch?v=BJboveokN0o" target="_blank">Watch demo</a>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="project-item">
-            <h2>3D Puzzle</h2>
-            <div class="project-content">
-                <img src="beaver.jpeg" alt="Beaver Puzzle Image" class="project-image">
-                <p class="project-description">3D puzzle project created using SolidWorks and then 3D printed. Collaborated in a 5-member team to design a puzzle featuring a hockey-playing beaver figurine. I led the design of the base, incorporating perpendicular gears for seamless horizontal to vertical rotation. See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Kidney Perfusion System <span style="font-size: 16px; color: #00bfae;">— 2nd Place</span></h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="fr1.jpeg" alt="Kidney Perfusion System" class="project-image">
+                    <p class="project-description">
+                        Designed a <strong>low-cost, off-grid kidney preservation system</strong> for low-resource settings using normothermic perfusion to improve transplant equity.<br>
+                        Developed a hybrid flow system with gravity-assisted perfusion, DC peristaltic pumping, and feedback control.<br>
+                        <em>Waterloo Bioengineering Competition — 2nd Place</em>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="project-item">
-            <h2>Arthritis Pill Bottle</h2>
-            <div class="project-content">
-                <img src="pill.png" alt="PillPivot Image" class="project-image">
-                <p class="project-description">Ergonomic pill bottle designed for individuals suffering from arthritis. Led a comprehensive iterative design process within a 6-member team, ensuring enhanced usability. Conducted needs assessment, engineering analysis, prototyping, and testing. Authored two detailed technical reports outlining project methodology and outcomes. Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Social Impact Consulting Program <span style="font-size: 16px; color: #00bfae;">— 1st Place</span></h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="powerBIDashboard.png" alt="Social Impact Dashboard" class="project-image">
+                    <p class="project-description">
+                        Partnered with Habitat for Humanity GTA to build a <strong>quantitative impact framework</strong> and analyze intake/update forms and datasets to identify key metrics.<br>
+                        Designed and implemented an <strong>interactive dashboard</strong> to support data-driven decision-making.<br>
+                        <em>Habitat for Humanity GTA — 1st Place</em>
+                    </p>
+                </div>
             </div>
         </div>
         <div class="project-item">
-            <h2>SnowFake</h2>
-            <div class="project-content">
-                <img src="SnowFake.png" alt="SnowFake Image" class="project-image">
-                <p class="project-description">Game of Life simulation in snowflake form following the mathematical model of snowflake replication by Norman Packard. Collaborated with three other students to develop the simulation in Python, using Git. I worked on the statistical modeling of snowflake generation and the presentation video. Won 1st place in a French national computer science competition, Les Trophées NSI. Find the code and documentation on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or learn more with our presentation <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">video</a> (french).</p>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Psychology Experiment Game</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="godot.png" alt="Godot Experiment Task Image" class="project-image">
+                    <p class="project-description">Interactive situational awareness task designed for a psychology experiment. Created using the Godot game engine in GDScript, it features an automatically scored interactive task and participant logging. Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. (Note: Data and screenshots are saved to the device when the game is run locally through the Godot engine. See example data and screenshot <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.)</p>
+                </div>
             </div>
         </div>
         <div class="project-item">
-            <h2>Garbage Collection Robot</h2>
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>3D Puzzle</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="beaver.jpeg" alt="Beaver Puzzle Image" class="project-image">
+                    <p class="project-description">3D puzzle project created using SolidWorks and then 3D printed. Collaborated in a 5-member team to design a puzzle featuring a hockey-playing beaver figurine. I led the design of the base, incorporating perpendicular gears for seamless horizontal to vertical rotation. See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Arthritis Pill Bottle</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="pill.png" alt="PillPivot Image" class="project-image">
+                    <p class="project-description">Ergonomic pill bottle designed for individuals suffering from arthritis. Led a comprehensive iterative design process within a 6-member team, ensuring enhanced usability. Conducted needs assessment, engineering analysis, prototyping, and testing. Authored two detailed technical reports outlining project methodology and outcomes. Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
+                </div>
+            </div>
+                </div>
+        <div class="project-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>SnowFake <span style="font-size: 16px; color: #00bfae;">— 1st Place</span></h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="SnowFake.png" alt="SnowFake Image" class="project-image">
+                    <p class="project-description">Game of Life simulation in snowflake form following the mathematical model of snowflake replication by Norman Packard. Collaborated with three other students to develop the simulation in Python, using Git. I worked on the statistical modeling of snowflake generation and the presentation video. Won 1st place in a French national computer science competition, Les Trophées NSI. Find the code and documentation on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or learn more with our presentation <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">video</a> (french).</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Garbage Collection Robot <span style="font-size: 16px; color: #00bfae;">— 2nd Place</span></h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image" class="project-image">
+                    <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition's Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-item">
+            <div class="collapsible-header" onclick="toggleCollapsible(this)">
+                <h2>Semantic Field Analyzer</h2>
+                <span class="toggle-icon">▼</span>
+            </div>
+            <div class="collapsible-content">
+                <div class="project-content">
+                    <img src="words.png" alt="Semantic Field Image" class="project-image">
+                    <p class="project-description">Semantic field analyzer developed in Python utilizing web scraping. This tool allows users to input a word, retrieves relevant data from a word family website, and analyzes a novel to quantify occurrences of the specified word family.</p>
+                </div>
+            </div>
             <div class="project-content">
                 <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image" class="project-image">
                 <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition’s Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
@@ -191,44 +338,105 @@
     </div>
 </div>
 
-<script>
+    <script>
     let currentIndex = {};
     
+    // Improved Carousel Functions
     function initCarousel(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        
+        const images = carousel.querySelectorAll('.carousel-image');
         if (images.length > 0) {
             images[0].style.display = 'block';
             currentIndex[carouselId] = 0;
+            
+            // Add carousel indicators
+            const indicatorsDiv = document.createElement('div');
+            indicatorsDiv.className = 'carousel-indicators';
+            
+            for (let i = 0; i < images.length; i++) {
+                const indicator = document.createElement('span');
+                indicator.className = 'carousel-indicator';
+                if (i === 0) indicator.classList.add('active');
+                indicator.onclick = () => showImage(carouselId, i);
+                indicatorsDiv.appendChild(indicator);
+            }
+            
+            carousel.parentElement.appendChild(indicatorsDiv);
         }
     }
     
     function showImage(carouselId, index) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        
+        const images = carousel.querySelectorAll('.carousel-image');
+        const indicators = carousel.parentElement.querySelectorAll('.carousel-indicator');
+        
         images.forEach((img, idx) => {
             img.style.display = (idx === index) ? 'block' : 'none';
         });
+        
+        indicators.forEach((indicator, idx) => {
+            if (idx === index) {
+                indicator.classList.add('active');
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
+        
         currentIndex[carouselId] = index;
     }
     
     function prevImage(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        
+        const images = carousel.querySelectorAll('.carousel-image');
         const newIndex = (currentIndex[carouselId] === 0) ? images.length - 1 : currentIndex[carouselId] - 1;
         showImage(carouselId, newIndex);
     }
     
     function nextImage(carouselId) {
-        const images = document.querySelectorAll(`#${carouselId} .carousel-image`);
+        const carousel = document.getElementById(carouselId);
+        if (!carousel) return;
+        
+        const images = carousel.querySelectorAll('.carousel-image');
         const newIndex = (currentIndex[carouselId] === images.length - 1) ? 0 : currentIndex[carouselId] + 1;
         showImage(carouselId, newIndex);
     }
     
+    // Collapsible Toggle Function
+    function toggleCollapsible(element) {
+        const content = element.nextElementSibling;
+        const icon = element.querySelector('.toggle-icon');
+        
+        content.classList.toggle('active');
+        icon.classList.toggle('active');
+    }
+    
+    // Initialize on page load
     document.addEventListener("DOMContentLoaded", function() {
+        // Initialize carousels
         initCarousel('carousel1');
         initCarousel('carousel2');
         initCarousel('carousel3');
         initCarousel('carousel4');
+        
+        // Add smooth scrolling for navigation links
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
     });
-    </script>
-    
-</body>
+    </script></body>
 </html>
