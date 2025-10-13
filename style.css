@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background: #f5f5f5;
-    color: #333333;
+    background: #f8f9fa;
+    color: #2c3e50;
 }
 
 /* Header background will be updated in HTML to use LinkedIn.jpg */
@@ -19,7 +19,7 @@ body {
     width: 100%;
     height: 100vh;
     background-image: url(KatieImageMain.png);
-    background-color: #2c3e50;
+    background-color: #1e3a5f;
     background-size: 40% auto;
     background-position: left bottom;
     background-repeat: no-repeat;
@@ -65,7 +65,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #5a6c7d;
+    color: #2c5aa0;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -75,7 +75,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #6c8299;
+    background: #1e3a5f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -97,17 +97,18 @@ nav ul li button {
  .resume-button {
     font-size: 16px;
     color: #fff;
-    border: 2px solid #5a6c7d;
-    background-color: #5a6c7d;
+    border: 2px solid #2c5aa0;
+    background-color: #2c5aa0;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     outline: none;
+    border-radius: 4px;
 }
 
  .resume-button:hover {
-    background-color: #4a5c6d;
-    border-color: #4a5c6d;
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
 }
 
 .resume-button:active {
@@ -141,7 +142,7 @@ nav ul li button {
 /* About Me Section */
  #about-me {
     padding: 80px 0;
-    color: #333333;
+    color: #2c3e50;
 }
 
 .about-me .row {
@@ -167,19 +168,20 @@ nav ul li button {
 }
 
  .about-col-2 h1 {
-    color: #5a6c7d;
+    color: #1e3a5f;
     font-size: 36px;
 }
 
  .about-col-2 p {
-    color: #333333;
+    color: #2c3e50;
     font-size: 18px;
+    line-height: 1.6;
 }
 
 /* Sections */
  #experience, #projects, #more, #contact{
     padding: 80px 0;
-    color: #333333;
+    color: #2c3e50;
 }
 
 #experience .container, #projects .container, #more .container {
@@ -190,6 +192,7 @@ nav ul li button {
     text-align: center;
     font-size: 34px;
     margin-bottom: 40px;
+    color: #1e3a5f;
 }
 
 .contact-info {
@@ -222,29 +225,30 @@ nav ul li button {
 
  .experience-section {
     padding: 80px 0;
-    background-color: #f5f5f5;
-    color: #333333;
+    background-color: #f8f9fa;
+    color: #2c3e50;
 }
 
 .experience-section h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
+    color: #1e3a5f;
 }
 
  .experience-item {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #e0e6ed;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
 }
 
  .experience-item h2 {
     font-size: 24px;
-    margin-bottom: 20px;
-    color: #5a6c7d;
+    margin-bottom: 10px;
+    color: #1e3a5f;
 }
 
 .experience-content {
@@ -291,7 +295,7 @@ nav ul li button {
     font-size: 18px;
     transition: 0.3s;
     user-select: none;
-    background-color: rgba(90, 108, 125, 0.7);
+    background-color: rgba(30, 58, 95, 0.7);
     border: none;
     outline: none;
     z-index: 1;
@@ -308,7 +312,7 @@ nav ul li button {
 }
 
  .prev:hover, .next:hover {
-    background-color: rgba(90, 108, 125, 0.9);
+    background-color: rgba(30, 58, 95, 0.9);
 }
 
 .experience-description {
@@ -319,29 +323,30 @@ nav ul li button {
 
  .projects-section {
     padding: 80px 0;
-    background-color: #f5f5f5;
-    color: #333333;
+    background-color: #f8f9fa;
+    color: #2c3e50;
 }
 
 .projects-section h1 {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
+    color: #1e3a5f;
 }
 
  .project-item {
     background: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid #e0e6ed;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 40px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
 }
 
  .project-item h2 {
     font-size: 24px;
-    margin-bottom: 20px;
-    color: #5a6c7d;
+    margin-bottom: 10px;
+    color: #1e3a5f;
 }
 
 .project-content {
@@ -381,7 +386,7 @@ nav ul li button {
 .toggle-icon {
     font-size: 24px;
     font-weight: bold;
-    color: #5a6c7d;
+    color: #2c5aa0;
     transition: transform 0.3s ease;
 }
 
@@ -402,6 +407,24 @@ nav ul li button {
     margin-top: 15px;
 }
 
+/* Skill Tags */
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.skill-tag {
+    background-color: #e8f0f8;
+    color: #1e3a5f;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #2c5aa0;
+}
+
 /* Carousel Improvements */
 .carousel-indicators {
     display: flex;
@@ -420,7 +443,7 @@ nav ul li button {
 }
 
 .carousel-indicator.active {
-    background-color: #5a6c7d;
+    background-color: #2c5aa0;
 }
 
 .carousel-image {
@@ -521,5 +544,5 @@ html {
 
 .experience-item:hover, .project-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(90, 108, 125, 0.15);
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
 }
