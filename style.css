@@ -20,7 +20,7 @@ body {
     height: 100vh;
     background-image: url(KatieImageMain.png);
     background-color: #1e3a5f;
-    background-size: 40% auto;
+    background-size: 100% auto;
     background-position: left bottom;
     background-repeat: no-repeat;
     padding-top: 80px;
@@ -130,13 +130,13 @@ nav ul li button {
 }
 
  .header-text a.learn-more {
-    color: #ffffff;
+    color: #7aa3cc;
     text-decoration: none;
     transition: color 0.3s;
 }
 
  .header-text a.learn-more:hover {
-    color: #e0e0e0;
+    color: #a8c5e0;
 }
 
 /* About Me Section */

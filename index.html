@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katie Langille</title>
-    <link rel="preconnect" href=            </div>
-        </div>
-        <div class="project-item">//fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -71,6 +69,15 @@
             </div>
             <div class="collapsible-content">
                 <div class="experience-content">
+                    <div class="carousel-container">
+                        <div class="carousel" id="carousel-bio">
+                            <button class="prev" onclick="prevImage('carousel-bio')">&#10094;</button>
+                            <img src="KatieImageMain.png" alt="Bioinformatics Image 1" class="carousel-image">
+                            <img src="KatieImageMain.png" alt="Bioinformatics Image 2" class="carousel-image">
+                            <img src="KatieImageMain.png" alt="Bioinformatics Image 3" class="carousel-image">
+                            <button class="next" onclick="nextImage('carousel-bio')">&#10095;</button>
+                        </div>
+                    </div>
                     <p class="experience-description">
                         <strong>The Hospital for Sick Children (SickKids) — Centre for Applied Genomics</strong> (Sep. 2025 – Dec. 2025)<br>
                         Developed a <strong>machine learning pipeline</strong> to predict risk of cognitive, language, and motor outcomes in preterm infants using demographic, clinical, and MRI data.<br>
@@ -91,6 +98,15 @@
             </div>
             <div class="collapsible-content">
                 <div class="experience-content">
+                    <div class="carousel-container">
+                        <div class="carousel" id="carousel1">
+                            <button class="prev" onclick="prevImage('carousel1')">&#10094;</button>
+                            <img src="bpmn.png" alt="BPMN Process Model Example" class="carousel-image">
+                            <img src="powerBIDashboard.png" alt="Power BI Dashboard Example" class="carousel-image">
+                            <img src="processmapdisco.png" alt="Process Map Example" class="carousel-image">
+                            <button class="next" onclick="nextImage('carousel1')">&#10095;</button>
+                        </div>
+                    </div>
                     <p class="experience-description">
                         <strong>Software Solutions, Transport Canada</strong> (Oct. 2024 – Mar. 2025)<br>
                         Led two process mining projects and analyzed large-scale process logs using Python to identify inefficiencies in government workflows, delivering data-driven recommendations.<br>
@@ -123,11 +139,6 @@
                 </div>
                                 <p class="experience-description">As a Cognitive Engineering Research Intern at the ACE Lab, I focused on enhancing the interaction between humans and complex systems through cognitive principles. My work was centered on two main areas. First, I contributed to the interdisciplinary <a href="https://carleton.ca/sense-md/" target="_blank">SENSE-APP project</a>, aimed at developing an app for older drivers in collaboration with another Carleton lab and the National Research Council (NRC). This project sought to assess older drivers' risk using AI models and telematics car data, and then communicate this information to the drivers to help them improve their driving safety and extend their driving years. I analyzed qualitative data from focus groups using QDA Miner, categorizing and tagging the data to identify key themes and quantify their importance, which informed the app's UX/UI design. Additionally, I supported research projects on human-machine interactions in autonomous driving, led by master's students in the lab. I developed experimental setups using Prepar3D to simulate realistic driving scenarios and coded audio stimuli for EEG data collection. I also created a situational awareness task using the Godot game engine to assess participants' recall of hazard scenes for an ongoing study.</p>
                 </div>
-            </div>
-        </div>
-            </div>
-        </div>
-                        </p>
             </div>
         </div>
         <div class="experience-item">
@@ -200,7 +211,15 @@
             </div>
             <div class="collapsible-content">
                 <div class="project-content">
-                    <img src="headset.JPG" alt="EMG Prosthetic Hand" class="project-image">
+                    <div class="carousel-container">
+                        <div class="carousel" id="carousel-emg">
+                            <button class="prev" onclick="prevImage('carousel-emg')">&#10094;</button>
+                            <img src="headset.JPG" alt="EMG Prosthetic Hand 1" class="carousel-image">
+                            <img src="KatieImageMain.png" alt="EMG Prosthetic Hand 2" class="carousel-image">
+                            <img src="KatieImageMain.png" alt="EMG Prosthetic Hand 3" class="carousel-image">
+                            <button class="next" onclick="nextImage('carousel-emg')">&#10095;</button>
+                        </div>
+                    </div>
                     <p class="project-description">
                         Built a <strong>low-cost myoelectric prosthetic hand</strong> capable of grasping and manipulating objects via forearm muscle signals in a 3-person team.<br>
                         Designed and implemented the electrical system and signal processing: amplified, filtered, and digitized weak EMG signals for real-time control using an Arduino.<br>
@@ -221,14 +240,20 @@
                 <span class="skill-tag">Systems Design</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="fr1.jpeg" alt="Kidney Perfusion System" class="project-image">
-                    <p class="project-description">
-                        Designed a <strong>low-cost, off-grid kidney preservation system</strong> for low-resource settings using normothermic perfusion to improve transplant equity.<br>
-                        Developed a hybrid flow system with gravity-assisted perfusion, DC peristaltic pumping, and feedback control.<br>
-                        <em>Waterloo Bioengineering Competition — 2nd Place</em>
-                    </p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-kidney">
+                        <button class="prev" onclick="prevImage('carousel-kidney')">‹</button>
+                        <img src="fr1.jpeg" alt="Kidney Perfusion System Image 1" class="carousel-image">
+                        <img src="fr2.jpeg" alt="Kidney Perfusion System Image 2" class="carousel-image">
+                        <img src="fr3.jpeg" alt="Kidney Perfusion System Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-kidney')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">
+                    Designed a <strong>low-cost, off-grid kidney preservation system</strong> for low-resource settings using normothermic perfusion to improve transplant equity.<br>
+                    Developed a hybrid flow system with gravity-assisted perfusion, DC peristaltic pumping, and feedback control.<br>
+                    <em>Waterloo Bioengineering Competition — 2nd Place</em>
+                </p>
             </div>
         </div>
         <div class="project-item">
@@ -242,14 +267,20 @@
                 <span class="skill-tag">Consulting</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="powerBIDashboard.png" alt="Social Impact Dashboard" class="project-image">
-                    <p class="project-description">
-                        Partnered with Habitat for Humanity GTA to build a <strong>quantitative impact framework</strong> and analyze intake/update forms and datasets to identify key metrics.<br>
-                        Designed and implemented an <strong>interactive dashboard</strong> to support data-driven decision-making.<br>
-                        <em>Habitat for Humanity GTA — 1st Place</em>
-                    </p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-social">
+                        <button class="prev" onclick="prevImage('carousel-social')">‹</button>
+                        <img src="powerBIDashboard.png" alt="Social Impact Dashboard Image 1" class="carousel-image">
+                        <img src="powerBIDashboard.png" alt="Social Impact Dashboard Image 2" class="carousel-image">
+                        <img src="powerBIDashboard.png" alt="Social Impact Dashboard Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-social')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">
+                    Partnered with Habitat for Humanity GTA to build a <strong>quantitative impact framework</strong> and analyze intake/update forms and datasets to identify key metrics.<br>
+                    Designed and implemented an <strong>interactive dashboard</strong> to support data-driven decision-making.<br>
+                    <em>Habitat for Humanity GTA — 1st Place</em>
+                </p>
             </div>
         </div>
         <div class="project-item">
@@ -263,10 +294,16 @@
                 <span class="skill-tag">Game Development</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="godot.png" alt="Godot Experiment Task Image" class="project-image">
-                    <p class="project-description">Interactive situational awareness task designed for a psychology experiment. Created using the Godot game engine in GDScript, it features an automatically scored interactive task and participant logging. Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. (Note: Data and screenshots are saved to the device when the game is run locally through the Godot engine. See example data and screenshot <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.)</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-psych">
+                        <button class="prev" onclick="prevImage('carousel-psych')">‹</button>
+                        <img src="godot.png" alt="Godot Experiment Task Image 1" class="carousel-image">
+                        <img src="godot.png" alt="Godot Experiment Task Image 2" class="carousel-image">
+                        <img src="godot.png" alt="Godot Experiment Task Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-psych')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">Interactive situational awareness task designed for a psychology experiment. Created using the Godot game engine in GDScript, it features an automatically scored interactive task and participant logging. Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. (Note: Data and screenshots are saved to the device when the game is run locally through the Godot engine. See example data and screenshot <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.)</p>
             </div>
         </div>
         <div class="project-item">
@@ -280,10 +317,16 @@
                 <span class="skill-tag">Mechanical Design</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="beaver.jpeg" alt="Beaver Puzzle Image" class="project-image">
-                    <p class="project-description">3D puzzle project created using SolidWorks and then 3D printed. Collaborated in a 5-member team to design a puzzle featuring a hockey-playing beaver figurine. I led the design of the base, incorporating perpendicular gears for seamless horizontal to vertical rotation. See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-puzzle">
+                        <button class="prev" onclick="prevImage('carousel-puzzle')">‹</button>
+                        <img src="beaver.jpeg" alt="Beaver Puzzle Image 1" class="carousel-image">
+                        <img src="beaver.jpeg" alt="Beaver Puzzle Image 2" class="carousel-image">
+                        <img src="beaver.jpeg" alt="Beaver Puzzle Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-puzzle')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">3D puzzle project created using SolidWorks and then 3D printed. Collaborated in a 5-member team to design a puzzle featuring a hockey-playing beaver figurine. I led the design of the base, incorporating perpendicular gears for seamless horizontal to vertical rotation. See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
             </div>
         </div>
         <div class="project-item">
@@ -297,12 +340,18 @@
                 <span class="skill-tag">User Testing</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="pill.png" alt="PillPivot Image" class="project-image">
-                    <p class="project-description">Ergonomic pill bottle designed for individuals suffering from arthritis. Led a comprehensive iterative design process within a 6-member team, ensuring enhanced usability. Conducted needs assessment, engineering analysis, prototyping, and testing. Authored two detailed technical reports outlining project methodology and outcomes. Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-pill">
+                        <button class="prev" onclick="prevImage('carousel-pill')">‹</button>
+                        <img src="pill.png" alt="PillPivot Image 1" class="carousel-image">
+                        <img src="pill.png" alt="PillPivot Image 2" class="carousel-image">
+                        <img src="pill.png" alt="PillPivot Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-pill')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">Ergonomic pill bottle designed for individuals suffering from arthritis. Led a comprehensive iterative design process within a 6-member team, ensuring enhanced usability. Conducted needs assessment, engineering analysis, prototyping, and testing. Authored two detailed technical reports outlining project methodology and outcomes. Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
             </div>
-                </div>
+        </div>
         <div class="project-item">
             <div class="collapsible-header" onclick="toggleCollapsible(this)">
                 <h2>SnowFake <span style="font-size: 16px; color: #2c5aa0;">— 1st Place</span></h2>
@@ -314,10 +363,16 @@
                 <span class="skill-tag">Statistical Modeling</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="SnowFake.png" alt="SnowFake Image" class="project-image">
-                    <p class="project-description">Game of Life simulation in snowflake form following the mathematical model of snowflake replication by Norman Packard. Collaborated with three other students to develop the simulation in Python, using Git. I worked on the statistical modeling of snowflake generation and the presentation video. Won 1st place in a French national computer science competition, Les Trophées NSI. Find the code and documentation on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or learn more with our presentation <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">video</a> (french).</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-snowfake">
+                        <button class="prev" onclick="prevImage('carousel-snowfake')">‹</button>
+                        <img src="SnowFake.png" alt="SnowFake Image 1" class="carousel-image">
+                        <img src="SnowFake.png" alt="SnowFake Image 2" class="carousel-image">
+                        <img src="SnowFake.png" alt="SnowFake Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-snowfake')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">Game of Life simulation in snowflake form following the mathematical model of snowflake replication by Norman Packard. Collaborated with three other students to develop the simulation in Python, using Git. I worked on the statistical modeling of snowflake generation and the presentation video. Won 1st place in a French national computer science competition, Les Trophées NSI. Find the code and documentation on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or learn more with our presentation <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">video</a> (french).</p>
             </div>
         </div>
         <div class="project-item">
@@ -331,10 +386,16 @@
                 <span class="skill-tag">Mechanical Design</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image" class="project-image">
-                    <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition's Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-robot">
+                        <button class="prev" onclick="prevImage('carousel-robot')">‹</button>
+                        <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image 1" class="carousel-image">
+                        <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image 2" class="carousel-image">
+                        <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-robot')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition's Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
             </div>
         </div>
         <div class="project-item">
@@ -347,21 +408,20 @@
                 <span class="skill-tag">Web Scraping</span>
             </div>
             <div class="collapsible-content">
-                <div class="project-content">
-                    <img src="words.png" alt="Semantic Field Image" class="project-image">
-                    <p class="project-description">Semantic field analyzer developed in Python utilizing web scraping. This tool allows users to input a word, retrieves relevant data from a word family website, and analyzes a novel to quantify occurrences of the specified word family.</p>
+                <div class="carousel-container">
+                    <div class="carousel" id="carousel-semantic">
+                        <button class="prev" onclick="prevImage('carousel-semantic')">‹</button>
+                        <img src="words.png" alt="Semantic Field Image 1" class="carousel-image">
+                        <img src="words.png" alt="Semantic Field Image 2" class="carousel-image">
+                        <img src="words.png" alt="Semantic Field Image 3" class="carousel-image">
+                        <button class="next" onclick="nextImage('carousel-semantic')">›</button>
+                    </div>
                 </div>
+                <p class="project-description">Semantic field analyzer developed in Python utilizing web scraping. This tool allows users to input a word, retrieves relevant data from a word family website, and analyzes a novel to quantify occurrences of the specified word family.</p>
             </div>
             <div class="project-content">
                 <img src="trashRobot.jpeg" alt="Garbage Collection Robot Image" class="project-image">
                 <p class="project-description">Garbage collection robot designed to maneuver around obstacles and collect garbage pieces. Won 2nd place in the Waterloo Engineering Competition’s Senior Design Category with 2 teammates. Designed a two-wheeled, laptop GUI-controlled robot with a rotating arm for moving trash and avoiding obstacles. I worked on the mechanical design and building of the robot, as well as the pitch. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
-            </div>
-        </div>
-        <div class="project-item">
-            <h2>Semantic Field Analyzer</h2>
-            <div class="project-content">
-                <img src="words.png" alt="Semantic Field Image" class="project-image">
-                <p class="project-description">Semantic field analyzer developed in Python utilizing web scraping. This tool allows users to input a word, retrieves relevant data from a word family website, and analyzes a novel to quantify occurrences of the specified word family.</p>
             </div>
         </div>
     </div>
@@ -459,20 +519,31 @@
     
     // Collapsible Toggle Function
     function toggleCollapsible(element) {
-        const content = element.nextElementSibling;
+        // Find the collapsible-content div (skip skill-tags if present)
+        let content = element.nextElementSibling;
+        while (content && !content.classList.contains('collapsible-content')) {
+            content = content.nextElementSibling;
+        }
+        
         const icon = element.querySelector('.toggle-icon');
         
-        content.classList.toggle('active');
-        icon.classList.toggle('active');
+        if (content) {
+            content.classList.toggle('active');
+        }
+        if (icon) {
+            icon.classList.toggle('active');
+        }
     }
     
     // Initialize on page load
     document.addEventListener("DOMContentLoaded", function() {
-        // Initialize carousels
-        initCarousel('carousel1');
-        initCarousel('carousel2');
-        initCarousel('carousel3');
-        initCarousel('carousel4');
+        // Initialize all carousels
+        const carouselIds = ['carousel-bio', 'carousel1', 'carousel2', 'carousel3', 'carousel4', 'carousel-emg', 'carousel-kidney', 'carousel-social', 'carousel-psych', 'carousel-puzzle', 'carousel-pill', 'carousel-snowfake', 'carousel-robot', 'carousel-semantic'];
+        carouselIds.forEach(id => {
+            if (document.getElementById(id)) {
+                initCarousel(id);
+            }
+        });
         
         // Add smooth scrolling for navigation links
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
