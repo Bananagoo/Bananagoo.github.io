@@ -18,7 +18,7 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(KatieImageMain.png);
+    background-image: url(images/header/KatieImageMain.png);
     background-color: #1e3a5f;
     background-size: 80% auto;
     background-position: left bottom;
