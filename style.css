@@ -20,7 +20,7 @@ body {
     height: 100vh;
     background-image: url(KatieImageMain.png);
     background-color: #1e3a5f;
-    background-size: 100% auto;
+    background-size: 250% auto;
     background-position: left bottom;
     background-repeat: no-repeat;
     padding-top: 80px;
@@ -130,13 +130,13 @@ nav ul li button {
 }
 
  .header-text a.learn-more {
-    color: #7aa3cc;
+    color: #85b3e0;
     text-decoration: none;
     transition: color 0.3s;
 }
 
  .header-text a.learn-more:hover {
-    color: #a8c5e0;
+    color: #b3d1f0;
 }
 
 /* About Me Section */
@@ -351,22 +351,24 @@ nav ul li button {
 
 .project-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .project-image {
     width: 100%;
-    max-width: 300px; /* Set a maximum width for the images */
+    max-width: 300px;
+    min-width: 250px;
     height: auto;
-    object-fit: contain; /* Scale the image to fit within the container */
+    object-fit: contain;
     border-radius: 8px;
-    margin-right: 20px; /* Add space between the image and description */
+    flex-shrink: 0;
 }
 
 .project-description {
     font-size: 16px;
     line-height: 1.6;
-    flex: 1; /* Take up remaining space */
+    flex: 1;
 }
 
 /* Collapsible Content Styles */
@@ -517,14 +519,13 @@ nav ul li button {
     }
 
     .carousel-container {
-        margin-right: 0;
         margin-bottom: 20px;
     }
 
     .project-image {
-        margin-right: 0;
         margin-bottom: 20px;
         max-width: 100%;
+        min-width: unset;
     }
 
     .container {
