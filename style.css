@@ -21,7 +21,7 @@ body {
     background-image: url(images/header/KatieImageMain.png);
     background-color: #1e3a5f;
     background-size: 80% auto;
-    background-position: left bottom;
+    background-position: 5% bottom;
     background-repeat: no-repeat;
     padding-top: 80px;
 }
@@ -356,12 +356,14 @@ nav ul li button {
     box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
  .project-item h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #1e3a5f;
+    text-align: center;
 }
 
 /* Experience and Project Visual Containers */
@@ -374,10 +376,20 @@ nav ul li button {
     margin-bottom: 15px;
 }
 
+.project-visual {
+    max-width: 250px;
+    height: 200px;
+    margin: 0 auto 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .project-visual .project-image {
     width: 100%;
-    max-width: 100%;
-    height: auto;
+    max-width: 250px;
+    height: 100%;
+    max-height: 200px;
     object-fit: contain;
     border-radius: 8px;
 }
@@ -386,6 +398,11 @@ nav ul li button {
 .item-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
+}
+
+.project-item .item-info {
+    align-items: center;
 }
 
 .project-content {
@@ -419,6 +436,17 @@ nav ul li button {
     align-items: center;
     padding: 15px 0;
     transition: all 0.3s ease;
+    width: 100%;
+}
+
+.project-item .collapsible-header {
+    justify-content: center;
+    position: relative;
+}
+
+.project-item .collapsible-header .toggle-icon {
+    position: absolute;
+    right: 0;
 }
 
 .collapsible-header:hover {
@@ -455,6 +483,10 @@ nav ul li button {
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 12px;
+}
+
+.project-item .skill-tags {
+    justify-content: center;
 }
 
 .skill-tag {
