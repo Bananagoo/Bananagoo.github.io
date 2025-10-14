@@ -236,13 +236,27 @@ nav ul li button {
     color: #1e3a5f;
 }
 
+/* Grid Layout for Experience and Project Sections */
+.experience-section .container,
+.projects-section .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.experience-section h1,
+.projects-section h1 {
+    grid-column: 1 / -1; /* Make the title span all columns */
+}
+
  .experience-item {
     background: #fff;
     border: 1px solid #e0e6ed;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 40px;
     box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
+    display: flex;
+    flex-direction: column;
 }
 
  .experience-item h2 {
@@ -339,14 +353,39 @@ nav ul li button {
     border: 1px solid #e0e6ed;
     border-radius: 8px;
     padding: 20px;
-    margin-bottom: 40px;
     box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
+    display: flex;
+    flex-direction: column;
 }
 
  .project-item h2 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #1e3a5f;
+}
+
+/* Experience and Project Visual Containers */
+.experience-visual,
+.project-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-visual .project-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+/* Item Info Container */
+.item-info {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content {
@@ -365,7 +404,8 @@ nav ul li button {
     flex-shrink: 0;
 }
 
-.project-description {
+.project-description,
+.experience-description {
     font-size: 16px;
     line-height: 1.6;
     flex: 1;
@@ -512,6 +552,12 @@ nav ul li button {
 
     .about-col-1 img {
         max-width: 70%;
+    }
+
+    /* Change grid to single column on mobile */
+    .experience-section .container,
+    .projects-section .container {
+        grid-template-columns: 1fr;
     }
 
     .experience-content, .project-content {
