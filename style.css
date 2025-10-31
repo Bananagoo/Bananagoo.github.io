@@ -179,12 +179,12 @@ nav ul li button {
 }
 
 /* Sections */
- #experience, #projects, #more, #contact{
+ #experience, #projects, #awards, #more, #contact{
     padding: 80px 0;
     color: #2c3e50;
 }
 
-#experience .container, #projects .container, #more .container {
+#experience .container, #projects .container, #awards .container, #more .container {
     text-align: center;
 }
 
@@ -221,6 +221,63 @@ nav ul li button {
 
 .contact-item a:hover {
     text-decoration: underline;
+}
+
+/* Awards Section */
+.awards-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    color: #2c3e50;
+}
+
+.awards-section h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #1e3a5f;
+}
+
+.awards-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.award-item {
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 25px;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(30, 58, 95, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.award-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(30, 58, 95, 0.15);
+}
+
+.award-name {
+    font-size: 16px;
+    color: #1e3a5f;
+    font-weight: 500;
+    flex: 1;
+}
+
+.award-date {
+    background-color: #e8f0f8;
+    color: #2c5aa0;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    margin-left: 15px;
 }
 
  .experience-section {
@@ -631,6 +688,16 @@ nav ul li button {
         margin-bottom: 20px;
         max-width: 100%;
         min-width: unset;
+    }
+
+    .award-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .award-date {
+        margin-left: 0;
     }
 
     .container {
