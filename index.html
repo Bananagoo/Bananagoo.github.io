@@ -3,11 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katie Langille — Biomedical Engineering</title>
-  <meta name="description" content="Portfolio of Katie Langille, Biomedical Engineering student at the University of Waterloo.">
+  <title>Katie Langille · Biomedical Engineering</title>
+  <meta name="description" content="Portfolio of Katie Langille, Biomedical Engineering student at the University of Waterloo: machine learning in healthcare, prosthetics, and playful builds.">
+  <meta name="theme-color" content="#120C33">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Katie Langille · Biomedical Engineering">
+  <meta property="og:description" content="ML in healthcare, prosthetic hands, games, and other builds by Katie Langille, Biomedical Engineering student at the University of Waterloo.">
+  <meta property="og:url" content="https://bananagoo.github.io/">
+  <meta property="og:image" content="https://bananagoo.github.io/images/header/headshot.JPG">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,7 +25,7 @@
      ============================================================ -->
 <header id="site-nav">
   <div class="nav-inner">
-    <a href="#header" class="logo">K. Langille</a>
+    <a href="#header" class="logo">K.&nbsp;Langille<span class="logo-dot">_</span></a>
     <nav id="main-nav" role="navigation" aria-label="Main navigation">
       <ul>
         <li><a href="#about-me">About</a></li>
@@ -39,16 +47,21 @@
      HERO
      ============================================================ -->
 <section id="header" class="hero">
-  <div class="hero-text">
-    <p class="hero-eyebrow">Biomedical Engineering, University of Waterloo</p>
-    <h1>Hi, I'm Katie.</h1>
-    <div class="hero-actions">
-      <a href="#about-me" class="btn-primary">Learn more</a>
-      <a href="#contact" class="btn-ghost">Get in touch</a>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">Biomedical Engineering @ UWaterloo</p>
+      <h1>Hi, I'm <span class="hero-name">Katie.</span></h1>
+      <p class="hero-tagline">I build ML tools for healthcare, plus the occasional prosthetic hand, game, or puzzle.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">See my work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
     </div>
-  </div>
-  <div class="hero-img" aria-hidden="true">
-    <img src="images/header/KatieImageMain.png" alt="">
+    <div class="hero-figure" aria-hidden="true">
+      <div class="hero-ring"></div>
+      <div class="hero-circle"></div>
+      <img class="hero-photo" src="images/header/KatieImageMain.webp" alt="" fetchpriority="high">
+    </div>
   </div>
 </section>
 
@@ -60,11 +73,12 @@
     <div class="about-grid">
       <div class="about-copy">
         <span class="section-label">About Me</span>
-        <p>Hi there, welcome to my website! I am currently studying Biomedical Engineering at the University of Waterloo. I enjoy building cool things, squash (the sport and the vegetable), student leadership, and first aid. I am passionate about learning and love to get involved with various projects and organizations in my community. Feel free to explore this page to learn more about my experiences and projects!</p>
-        <p class="currently-line"><span>Currently:</span> training for a half, doing AI/ML work in healthcare, and enjoying Toronto summer.</p>
+        <p>I'm a Biomedical Engineering student at the University of Waterloo, happiest when I'm building something: machine learning pipelines for healthcare, prosthetic hands, experiment games, the occasional 3D-printed beaver. Away from the keyboard I play squash (the sport, though I'm fond of the vegetable too), respond with the campus first-aid team, and say yes to more community projects than strictly fit in a calendar.</p>
+        <p class="currently-line"><span>Currently:</span> doing AI/ML work in healthcare at Signal1 and enjoying Toronto summer runs.</p>
       </div>
       <div class="about-photo">
         <img src="images/header/headshot.JPG" alt="Katie Langille">
+        <span class="photo-note" aria-hidden="true">that's me!</span>
       </div>
     </div>
   </div>
@@ -75,13 +89,13 @@
      ============================================================ -->
 <section id="experience" class="section experience-section">
   <div class="container">
-    <h2 class="section-title">Experience</h2>
+    <h2 class="section-title">Experience <span class="title-note">where I've been learning by doing</span></h2>
     <div class="timeline">
 
       <!-- Signal1 -->
       <article class="exp-card reveal">
         <div class="exp-single-img">
-          <img src="images/experience/signal1.png" alt="Signal1" class="exp-img">
+          <img src="images/experience/signal1.png" alt="Signal1" class="exp-img" loading="lazy" decoding="async">
         </div>
         <div class="exp-header">
           <div class="exp-title-block">
@@ -98,12 +112,12 @@
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Healthcare AI</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
-          <p>Contribute to system for governing and monitoring machine learning and AI models in healthcare. Build and test Python tooling to support model evaluation and performance monitoring. Support validation of AI models to strengthen reliability and responsible-AI standards.</p>
+          <p>As a <strong>Machine Learning Intern at Signal1</strong>, I work on a platform for <strong>governing and monitoring AI models</strong> deployed in healthcare settings. I build and test <strong>Python tooling</strong> that supports model evaluation and performance monitoring, and contribute to the <strong>validation of AI models</strong> to strengthen reliability and responsible-AI standards.</p>
         </div>
       </article>
 
@@ -123,9 +137,9 @@
           <div class="carousel-container">
             <div class="carousel" id="carousel-bio">
               <button class="prev" onclick="prevImage('carousel-bio')" aria-label="Previous">&#10094;</button>
-              <img src="images/experience/TCAG_logo.jpg" alt="TCAG Logo" class="carousel-image">
-              <img src="images/experience/skwork.jpeg" alt="SickKids workspace" class="carousel-image">
-              <img src="images/experience/skview.jpeg" alt="SickKids" class="carousel-image">
+              <img src="images/experience/TCAG_logo.jpg" alt="TCAG Logo" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/skwork.jpeg" alt="SickKids workspace" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/skview.jpeg" alt="SickKids" class="carousel-image" loading="lazy" decoding="async">
               <button class="next" onclick="nextImage('carousel-bio')" aria-label="Next">&#10095;</button>
             </div>
           </div>
@@ -135,10 +149,10 @@
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Bioinformatics</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
           <p>As a <strong>Bioinformatics Software Research Student at The Hospital for Sick Children (SickKids)</strong>, I worked at the intersection of <strong>machine learning and genomic medicine</strong> to support clinical research. I designed and implemented an end-to-end ML pipeline to predict cognitive, language, and motor outcomes in preterm infants using demographic, clinical, and MRI data.<br><br>
           I also contributed to the design and iteration of a <strong>protein language model variant effect predictor</strong>, analyzing attention mechanisms to improve model interpretability. I collaborated with clinicians and researchers to drive impact in pediatric precision medicine.</p>
@@ -161,9 +175,9 @@
           <div class="carousel-container">
             <div class="carousel" id="carousel1">
               <button class="prev" onclick="prevImage('carousel1')" aria-label="Previous">&#10094;</button>
-              <img src="images/experience/bpmn.png" alt="BPMN Process Model" class="carousel-image">
-              <img src="images/projects/powerBIDashboard.png" alt="Power BI Dashboard" class="carousel-image">
-              <img src="images/experience/processmapdisco.png" alt="Process Map" class="carousel-image">
+              <img src="images/experience/bpmn.png" alt="BPMN Process Model" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/projects/powerBIDashboard.png" alt="Power BI Dashboard" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/processmapdisco.png" alt="Process Map" class="carousel-image" loading="lazy" decoding="async">
               <button class="next" onclick="nextImage('carousel1')" aria-label="Next">&#10095;</button>
             </div>
           </div>
@@ -173,10 +187,10 @@
           <span class="skill-tag">Data Analysis</span>
           <span class="skill-tag">Process Mining</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
           <p>As a <strong>Data Science and Process Mining Analyst at Transport Canada</strong>, I led two major <strong>process mining projects</strong> to enhance the efficiency of federal workflows. Using <strong>Python-based analytics</strong>, I identified bottlenecks in large-scale operational logs and delivered data-driven recommendations to policy and operations teams.<br><br>
           I built a <strong>secure and cost-efficient machine learning pipeline</strong> to automate classification tasks and reduce administrative burden, while also developing <strong>process conformance models</strong> and <strong>interactive dashboards</strong> that enabled stakeholders to act on insights with confidence.</p>
@@ -199,9 +213,9 @@
           <div class="carousel-container">
             <div class="carousel" id="carousel2">
               <button class="prev" onclick="prevImage('carousel2')" aria-label="Previous">&#10094;</button>
-              <img src="images/experience/eeg.JPG" alt="EEG Headset" class="carousel-image">
-              <img src="images/projects/headset.JPG" alt="EEG Data" class="carousel-image">
-              <img src="images/experience/driving.JPG" alt="Driving Simulation" class="carousel-image">
+              <img src="images/experience/eeg.JPG" alt="EEG Headset" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/projects/headset.JPG" alt="EEG Data" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/driving.JPG" alt="Driving Simulation" class="carousel-image" loading="lazy" decoding="async">
               <button class="next" onclick="nextImage('carousel2')" aria-label="Next">&#10095;</button>
             </div>
           </div>
@@ -211,10 +225,10 @@
           <span class="skill-tag">MATLAB</span>
           <span class="skill-tag">UX/UI Design</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
           <p>As a <strong>Cognitive Engineering Research Intern at the ACE Lab</strong>, I focused on improving human interaction with complex systems through cognitive science and usability research. A core part of my work was contributing to the interdisciplinary <a href="https://carleton.ca/sense-md/" target="_blank">SENSE-APP project</a>, developed in collaboration with Carleton researchers and the <strong>National Research Council (NRC)</strong>. The project aimed to assess driving risk in older adults using <strong>AI and telematics data</strong>, then communicate insights back to users to promote safer, longer driving.<br><br>
           I analyzed <strong>qualitative focus group data</strong> with QDA Miner, identifying key themes that directly shaped UX/UI design decisions. In parallel, I supported studies on <strong>human–machine interaction in autonomous driving</strong>, building experimental environments in Prepar3D and coding auditory stimuli for <strong>EEG data collection</strong>. I also designed a <strong>situational awareness task in Godot</strong> to evaluate hazard perception in ongoing research.</p>
@@ -237,9 +251,9 @@
           <div class="carousel-container">
             <div class="carousel" id="carousel3">
               <button class="prev" onclick="prevImage('carousel3')" aria-label="Previous">&#10094;</button>
-              <img src="images/experience/pool1.jpeg" alt="Pool" class="carousel-image">
-              <img src="images/experience/pool2.jpeg" alt="Hand Prints" class="carousel-image">
-              <img src="images/experience/pool3.jpeg" alt="Pool Staff" class="carousel-image">
+              <img src="images/experience/pool1.jpeg" alt="Pool" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/pool2.jpeg" alt="Hand Prints" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/pool3.jpeg" alt="Pool Staff" class="carousel-image" loading="lazy" decoding="async">
               <button class="next" onclick="nextImage('carousel3')" aria-label="Next">&#10095;</button>
             </div>
           </div>
@@ -249,10 +263,10 @@
           <span class="skill-tag">Leadership</span>
           <span class="skill-tag">Operations</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
           <p>As a <strong>Manager and Assistant Manager</strong> from 2022 to 2023, I was responsible for overseeing the daily operations and safety of over <strong>100 patrons</strong>, while leading a team of <strong>seven aquatic staff</strong>. I managed <strong>scheduling, training, and financial coordination</strong> to ensure the smooth delivery of high-quality community programs.<br><br>
           In addition to leadership responsibilities, I served as a <strong>lifeguard, swim instructor, and lifesaving course instructor</strong>, managing and delivering aquatic programming for all ages. Recently, I joined the <strong>Board of Directors</strong>, where I contribute to reopening strategy and the planning of a new facility to support long-term community growth. Learn more on our <a href="https://www.mahonebaypool.com/" target="_blank">website</a>.</p>
@@ -275,9 +289,9 @@
           <div class="carousel-container">
             <div class="carousel" id="carousel4">
               <button class="prev" onclick="prevImage('carousel4')" aria-label="Previous">&#10094;</button>
-              <img src="images/experience/fr1.jpeg" alt="Responder Uniform" class="carousel-image">
-              <img src="images/experience/fr2.jpeg" alt="Training" class="carousel-image">
-              <img src="images/experience/fr3.jpeg" alt="Responder Team" class="carousel-image">
+              <img src="images/experience/fr1.jpeg" alt="Responder Uniform" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/fr2.jpeg" alt="Training" class="carousel-image" loading="lazy" decoding="async">
+              <img src="images/experience/fr3.jpeg" alt="Responder Team" class="carousel-image" loading="lazy" decoding="async">
               <button class="next" onclick="nextImage('carousel4')" aria-label="Next">&#10095;</button>
             </div>
           </div>
@@ -287,10 +301,10 @@
           <span class="skill-tag">Crisis Management</span>
           <span class="skill-tag">Training</span>
         </div>
-        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+        <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
           <span>Read more</span>
           <span class="toggle-icon">▼</span>
-        </div>
+        </button>
         <div class="collapsible-content">
           <p>As a <strong>Responder with the University of Waterloo Campus Response Team</strong> (2023–Present), I support the safety and well-being of the university community by responding to <strong>medical and mental health emergencies</strong> during shifts and on-call coverage.<br><br>
           In Winter 2024, I served as an <strong>Assistant Trainer</strong>, running assessment sessions and helping organize training in <strong>first aid and crisis management</strong>. Through this role, I contributed to strengthening the team's readiness and overall emergency response capabilities.</p>
@@ -306,13 +320,13 @@
      ============================================================ -->
 <section id="projects" class="section projects-section">
   <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <h2 class="section-title">Projects <span class="title-note">things I've built (and broken, and rebuilt)</span></h2>
     <div class="projects-grid">
 
-      <!-- Ghana Field Course — 2026 -->
+      <!-- Ghana Field Course, 2026 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/ghana.jpg" alt="Field Course in Ghana" class="project-img">
+          <img src="images/projects/ghana.jpg" alt="Field Course in Ghana" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -324,20 +338,20 @@
             <span class="skill-tag">Public Health</span>
             <span class="skill-tag">Interculturalism</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Field course in Ghana studying water, sanitation, and health through field visits, community conversations, and site-based learning.<br><br>I saw how WASH systems are shaped by much more than infrastructure: governance, gender, financing, culture, and everyday use all determine whether a system actually works.<br><br>For my knowledge mobilization project, I built an interactive map game where players follow the course route, collect field-journal tokens, and gradually build a systems diagram from what we learned on the ground. <a href="https://bananagoo.github.io/WASH-in-Ghana-Map/" target="_blank">Play it here</a>.</p>
           </div>
         </div>
       </article>
 
-      <!-- Innovation North — 2026 -->
+      <!-- Innovation North, 2026 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/innovationnnorth.jpeg" alt="Innovation North Systems Innovation Challenge" class="project-img">
+          <img src="images/projects/innovationnnorth.jpeg" alt="Innovation North Systems Innovation Challenge" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -350,20 +364,20 @@
             <span class="skill-tag">Research</span>
             <span class="skill-tag">Public Health</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Designed a systems-level intervention framework linking housing affordability, family dispersal, informal care-network loss, and downstream hospital demand; synthesized cross-sector drivers into intervention directions around modular housing, mixed-community living, and preventative care capacity. Awarded "Best Story Told" among 245 students from 25 universities.</p>
           </div>
         </div>
       </article>
 
-      <!-- Gait Modeling — Winter 2026 -->
+      <!-- Gait Modeling, Winter 2026 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/gait.png" alt="Predictive Modeling of Human Gait" class="project-img">
+          <img src="images/projects/gait.png" alt="Predictive Modeling of Human Gait" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -375,20 +389,20 @@
             <span class="skill-tag">DDPM</span>
             <span class="skill-tag">Python</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Worked on building a multi-dataset pipeline to harmonize heterogeneous human-gait datasets into a canonical representation via spatial mapping and temporal normalization. Also worked on developing a deep probabilistic model (denoising diffusion, DDPM) to predict full gait cycles from past kinematics. Completed at the <em>Neuromechanics &amp; Assistive Robotics Lab under Dr. Arami</em>, Winter 2026.</p>
           </div>
         </div>
       </article>
 
-      <!-- FarbeFit — Fall 2025 -->
+      <!-- FarbeFit, Fall 2025 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/farbfit.jpeg" alt="FarbeFit Smart Prosthetic Interface" class="project-img">
+          <img src="images/projects/farbfit.jpeg" alt="FarbeFit Smart Prosthetic Interface" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -401,20 +415,20 @@
             <span class="skill-tag">AI Analytics</span>
             <span class="skill-tag">Mobile UI</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Designed a data-driven prosthetic interface integrating pressure-sensing hardware with AI-driven analytics to identify early tissue-risk zones. Built a mobile app UI prototype enabling real-time pain logging, activity tracking, and automated alerts to support remote clinical monitoring. Awarded <em>1st Place at the Waterloo Engineering Competition, Fall 2025</em>.</p>
           </div>
         </div>
       </article>
 
-      <!-- EMG Prosthetic — Summer 2025 -->
+      <!-- EMG Prosthetic, Summer 2025 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/MyoTree.jpeg" alt="EMG Prosthetic Hand" class="project-img">
+          <img src="images/projects/MyoTree.jpeg" alt="EMG Prosthetic Hand" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -426,10 +440,10 @@
             <span class="skill-tag">Arduino</span>
             <span class="skill-tag">Biomedical Engineering</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>As part of a three-person team, I engineered a <strong>low-cost myoelectric prosthetic hand</strong> capable of real-time grasp and object manipulation using forearm EMG signals. I designed and implemented the <strong>electrical system and signal processing pipeline</strong>, amplifying, filtering, and digitizing weak EMG signals through an Arduino to enable responsive control.<br><br>
             The mechanical design involved a <strong>tendon-driven whippletree mechanism</strong> that ensured even force distribution across fingers. <a href="https://www.youtube.com/watch?v=BJboveokN0o" target="_blank">Watch demo</a></p>
@@ -437,10 +451,10 @@
         </div>
       </article>
 
-      <!-- Kidney Perfusion — 2025 -->
+      <!-- Kidney Perfusion, 2025 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/ReVivoFlow.jpg" alt="Kidney Perfusion System" class="project-img">
+          <img src="images/projects/ReVivoFlow.jpg" alt="Kidney Perfusion System" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -453,21 +467,21 @@
             <span class="skill-tag">Engineering Analysis</span>
             <span class="skill-tag">Systems Design</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
-            <p>Developed a <strong>low-cost, off-grid kidney preservation system</strong> designed for low-resource settings, with the goal of improving <strong>transplant equity</strong> through accessible normothermic perfusion — built in a 6-hour competition. The design included a <strong>hybrid flow system</strong> combining gravity-assisted perfusion, DC peristaltic pumping, and feedback control.<br><br>
+            <p>Developed a <strong>low-cost, off-grid kidney preservation system</strong> designed for low-resource settings, with the goal of improving <strong>transplant equity</strong> through accessible normothermic perfusion, built in a 6-hour competition. The design included a <strong>hybrid flow system</strong> combining gravity-assisted perfusion, DC peristaltic pumping, and feedback control.<br><br>
             Awarded <em>2nd Place at the Waterloo Bioengineering Competition</em>.</p>
           </div>
         </div>
       </article>
 
-      <!-- SICP — 2025 -->
+      <!-- SICP, 2025 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/SICP.png" alt="Social Impact Dashboard" class="project-img">
+          <img src="images/projects/SICP.png" alt="Social Impact Dashboard" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -480,10 +494,10 @@
             <span class="skill-tag">Dashboard Design</span>
             <span class="skill-tag">Consulting</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Collaborated with <strong>Habitat for Humanity GTA</strong> to develop a <strong>quantitative impact framework</strong> aimed at measuring and improving program effectiveness. I analyzed intake and update datasets to identify key performance metrics, helping the organization better understand community needs and outcomes.<br><br>
             I also designed and implemented an <strong>interactive dashboard</strong> to enable data-driven decision-making. <em>Recognized with 1st Place for impact and innovation</em>.</p>
@@ -491,10 +505,10 @@
         </div>
       </article>
 
-      <!-- Psychology Experiment Game — 2024 -->
+      <!-- Psychology Experiment Game, 2024 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/godot.png" alt="Godot Experiment Task" class="project-img">
+          <img src="images/projects/godot.png" alt="Godot Experiment Task" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -506,10 +520,10 @@
             <span class="skill-tag">GDScript</span>
             <span class="skill-tag">Game Development</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Designed an <strong>interactive situational awareness task</strong> for a psychology experiment, built in the <strong>Godot game engine</strong> using GDScript. The task features automated scoring, participant event logging, and dynamic scene interactions to assess recall and hazard perception.<br><br>
             Try it out <a href="https://bananagoo.github.io/Psych-Experiment-Task/" target="_blank">here</a>. Example outputs can be viewed <a href="https://drive.google.com/drive/folders/1wd4K23sbMQ0IAWKp5dPJSm2LhLHzILTm?usp=sharing" target="_blank">here</a>.</p>
@@ -517,10 +531,10 @@
         </div>
       </article>
 
-      <!-- Garbage Robot — 2024 -->
+      <!-- Garbage Robot, 2024 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/trashRobot.jpeg" alt="Garbage Collection Robot" class="project-img">
+          <img src="images/projects/trashRobot.jpeg" alt="Garbage Collection Robot" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -533,10 +547,10 @@
             <span class="skill-tag">Python</span>
             <span class="skill-tag">Mechanical Design</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Designed an <strong>autonomous garbage collection robot</strong> capable of navigating obstacles and retrieving waste, created in a team of three for the Waterloo Engineering Competition. The system featured a <strong>two-wheeled, GUI-controlled platform</strong> with a rotating arm for object detection and collection.<br><br>
             Earned <em>2nd Place</em> in the Senior Design Category. See it in action <a href="https://drive.google.com/drive/folders/1g0aNEr06SegWOYberixbwMrJ90VYNAy-?usp=sharing" target="_blank">here</a>.</p>
@@ -544,10 +558,10 @@
         </div>
       </article>
 
-      <!-- 3D Mechanical Puzzle — 2024 -->
+      <!-- 3D Mechanical Puzzle, 2024 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/beaver.jpeg" alt="Beaver Puzzle" class="project-img">
+          <img src="images/projects/beaver.jpeg" alt="Beaver Puzzle" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -559,10 +573,10 @@
             <span class="skill-tag">3D Printing</span>
             <span class="skill-tag">Mechanical Design</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Created a <strong>3D mechanical puzzle</strong> using SolidWorks and 3D printing, as part of a five-member design team. The puzzle features a hockey-playing beaver figurine, combining playful aesthetics with functional mechanics. I led the design of the <strong>gear-driven base</strong>, integrating perpendicular gears to enable smooth horizontal-to-vertical rotation.<br><br>
             See it in action <a href="https://drive.google.com/file/d/1tfQmOR_dkozS-FY8X4KlWnLP3Ld4Stog/view?usp=sharing" target="_blank">here</a>.</p>
@@ -570,10 +584,10 @@
         </div>
       </article>
 
-      <!-- Arthritis Pill Bottle — 2024 -->
+      <!-- Arthritis Pill Bottle, 2024 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/pill.png" alt="Arthritis Pill Bottle" class="project-img">
+          <img src="images/projects/pill.png" alt="Arthritis Pill Bottle" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -585,10 +599,10 @@
             <span class="skill-tag">Prototyping</span>
             <span class="skill-tag">User Testing</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Designed an <strong>ergonomic pill bottle</strong> for individuals with arthritis, focusing on improved accessibility and ease of use. As part of a six-member team, I led a comprehensive <strong>iterative design process</strong> involving needs assessment, engineering analysis, prototyping, and user testing. I also authored two in-depth <strong>technical reports</strong> documenting methodology, design rationale, and usability outcomes.<br><br>
             Learn more <a href="https://drive.google.com/file/d/1h45tSg4A37Uf_lHcYOUIsXKiE8zDH8Vk/view?usp=sharing" target="_blank">here</a>.</p>
@@ -596,10 +610,10 @@
         </div>
       </article>
 
-      <!-- SnowFake — 2022 -->
+      <!-- SnowFake, 2022 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/SnowFake.png" alt="SnowFake" class="project-img">
+          <img src="images/projects/SnowFake.png" alt="SnowFake" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -612,10 +626,10 @@
             <span class="skill-tag">Git</span>
             <span class="skill-tag">Statistical Modeling</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Developed a <strong>Game of Life simulation in snowflake form</strong>, inspired by Norman Packard's mathematical model of snowflake replication. Collaborated within a four-member team to build the simulation in <strong>Python</strong>, using <strong>Git</strong> for version control. I led the <strong>statistical modeling</strong> of snowflake generation and created the <strong>presentation video</strong>.<br><br>
             Earned <em>1st Place</em> in the French national competition <strong>Les Trophées NSI</strong>. Explore the code on <a href="https://github.com/SuperZooper3/Game-of-Hex" target="_blank">GitHub</a> or watch our <a href="https://www.youtube.com/watch?v=TqOEfdryWAk" target="_blank">presentation</a> (French).</p>
@@ -623,10 +637,10 @@
         </div>
       </article>
 
-      <!-- Semantic Field Analyzer — 2022 -->
+      <!-- Semantic Field Analyzer, 2022 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
-          <img src="images/projects/words.png" alt="Semantic Field" class="project-img">
+          <img src="images/projects/words.png" alt="Semantic Field" class="project-img" loading="lazy" decoding="async">
         </div>
         <div class="project-body">
           <div class="project-title-row">
@@ -637,10 +651,10 @@
             <span class="skill-tag">Python</span>
             <span class="skill-tag">Web Scraping</span>
           </div>
-          <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
             <span>Read more</span>
             <span class="toggle-icon">▼</span>
-          </div>
+          </button>
           <div class="collapsible-content">
             <p>Built a <strong>semantic field analysis tool</strong> in Python featuring automated web scraping to explore linguistic patterns in literature. Users can input a target word, after which the tool retrieves related terms from a word-family database and analyzes a selected novel to <strong>quantify word family occurrences</strong>. Designed to support literary and linguistic research.</p>
           </div>
@@ -656,7 +670,7 @@
      ============================================================ -->
 <section id="awards" class="section awards-section">
   <div class="container">
-    <h2 class="section-title">Awards &amp; Honours</h2>
+    <h2 class="section-title">Awards &amp; Honours <span class="title-note">a shelf of shiny things</span></h2>
     <div class="awards-list">
 
       <div class="award-item reveal">
@@ -666,7 +680,7 @@
       </div>
       <div class="award-item reveal">
         <span class="award-year">2026</span>
-        <span class="award-name">"Best Story Told" — Innovation North Systems Innovation Challenge <span class="award-sub">(245 students, 25 universities)</span></span>
+        <span class="award-name">"Best Story Told" · Innovation North Systems Innovation Challenge <span class="award-sub">(245 students, 25 universities)</span></span>
         <span class="award-prize-tag">1st Place</span>
         <a href="https://www.innovationnorth.ca/" class="award-link" target="_blank">Learn more</a>
       </div>
@@ -718,18 +732,18 @@
      ============================================================ -->
 <section id="contact" class="section contact-section">
   <div class="container">
-    <h2 class="section-title centered">Get in Touch</h2>
+    <h2 class="section-title centered">Get in Touch <span class="title-note">my inbox is friendly</span></h2>
     <div class="contact-grid">
       <a href="https://www.linkedin.com/in/katherine-langille/" target="_blank" class="contact-card">
-        <img src="images/contact/linkedin.png" alt="LinkedIn">
+        <img src="images/contact/linkedin.png" alt="">
         <span>linkedin.com/in/katherine-langille</span>
       </a>
       <a href="mailto:klangill@uwaterloo.ca" class="contact-card">
-        <img src="images/contact/email.png" alt="Email">
+        <img src="images/contact/email.png" alt="">
         <span>klangill@uwaterloo.ca</span>
       </a>
       <a href="tel:+16136688713" class="contact-card">
-        <img src="images/contact/phone.png" alt="Phone">
+        <img src="images/contact/phone.png" alt="">
         <span>(613) 668-8713</span>
       </a>
     </div>
@@ -741,21 +755,43 @@
      ============================================================ -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <p class="footer-name">Katherine Langille</p>
-    <p class="footer-countdown">Whiskey Run Half Marathon — <span id="marathon-countdown">calculating...</span></p>
-    <p class="footer-copy">&copy; 2026</p>
+    <p class="footer-name">Katherine Langille
+      <button id="robo-toggle" aria-pressed="false" aria-label="A little robot friend">
+        <img src="images/robot/head_happy.webp" alt="">
+      </button>
+    </p>
+    <p class="footer-copy">&copy; 2026 · powered by curiosity</p>
   </div>
 </footer>
 
+<!-- ============================================================
+     ROBOT BUILD RIG (fixed, builds as you scroll)
+     ============================================================ -->
+<div id="robo-rig" class="closed" aria-hidden="true">
+  <button class="robo-close" id="robo-close" aria-label="Hide robot">✕</button>
+  <div class="robo-bubble" id="robo-bubble"><span id="robo-bubble-text">hi! I get built as you scroll</span></div>
+  <button class="robo-stage" id="robo-stage" aria-label="Robot mascot" tabindex="-1">
+    <img class="robo-ghost" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-lleg" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-rleg" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-harm" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-warm" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-body" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-slice robo-slice-head" src="images/robot/robot_full.webp" alt="">
+  </button>
+  <div class="robo-platform"></div>
+  <div class="robo-meter">
+    <div class="robo-meter-bar"><div class="robo-meter-fill" id="robo-meter-fill"></div></div>
+    <span class="robo-meter-label" id="robo-meter-label">BUILD 0%</span>
+  </div>
+</div>
 
 <!-- ============================================================
      SCRIPTS
      ============================================================ -->
-<button id="companion-toggle" aria-label="Toggle pixel companion">
-  <span class="ct-dot"></span><span class="ct-label">companion</span>
-</button>
-
 <script>
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 /* ---- Carousel ---- */
 let currentIndex = {};
 
@@ -764,6 +800,7 @@ function initCarousel(id) {
   if (!el) return;
   const imgs = el.querySelectorAll('.carousel-image');
   if (!imgs.length) return;
+  imgs[0].removeAttribute('loading'); /* lazy + display:none never loads */
   imgs[0].style.display = 'block';
   currentIndex[id] = 0;
   const dots = document.createElement('div');
@@ -782,6 +819,7 @@ function showImage(id, idx) {
   if (!el) return;
   const imgs = el.querySelectorAll('.carousel-image');
   const dots = el.parentElement.querySelectorAll('.carousel-indicator');
+  imgs[idx].removeAttribute('loading');
   imgs.forEach((img, i) => img.style.display = i === idx ? 'block' : 'none');
   dots.forEach((d, i) => d.classList.toggle('active', i === idx));
   currentIndex[id] = idx;
@@ -810,9 +848,10 @@ function toggleCollapsible(header) {
   const icon = header.querySelector('.toggle-icon');
   if (content) content.classList.toggle('active');
   if (icon) icon.classList.toggle('active');
+  const open = content && content.classList.contains('active');
+  header.setAttribute('aria-expanded', open);
   if (header.querySelector('span:first-child')) {
-    header.querySelector('span:first-child').textContent =
-      content && content.classList.contains('active') ? 'Read less' : 'Read more';
+    header.querySelector('span:first-child').textContent = open ? 'Read less' : 'Read more';
   }
 }
 
@@ -865,139 +904,145 @@ const revealObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ---- Marathon countdown (Whiskey Run Half, July 5 2026) ---- */
-function updateCountdown() {
-  const race = new Date('2026-07-05T08:00:00-03:00');
-  const now  = new Date();
-  const diff = race - now;
-  const el   = document.getElementById('marathon-countdown');
-  if (!el) return;
-  if (diff <= 0) { el.textContent = 'Race day!'; return; }
-  const d = Math.floor(diff / 86400000);
-  const h = Math.floor((diff % 86400000) / 3600000);
-  const m = Math.floor((diff % 3600000)  / 60000);
-  const s = Math.floor((diff % 60000)    / 1000);
-  el.textContent = `${d}d ${h}h ${m}m ${s}s`;
+/* ====================================================================
+   ROBOT BUILD RIG
+   Robot is assembled piece by piece (legs, hips, chest, head) as you
+   scroll past milestones. Speech bubble reacts to the section in view;
+   click for beeps.
+   ==================================================================== */
+(function initRobot() {
+  const slices = document.querySelectorAll('.robo-slice');
+  const fill  = document.getElementById('robo-meter-fill');
+  const label = document.getElementById('robo-meter-label');
+  const bubble = document.getElementById('robo-bubble');
+  const bubbleText = document.getElementById('robo-bubble-text');
+  const stage = document.getElementById('robo-stage');
+  const rig = document.getElementById('robo-rig');
+  const toggleBtn = document.getElementById('robo-toggle');
+  const THRESHOLDS = [0.08, 0.24, 0.4, 0.56, 0.72, 0.88]; /* left leg, right leg, hanging arm, waving arm, body, head */
+
+  const SECTION_LINES = {
+    'header':     'hi! scroll to build me',
+    'about-me':   'downloading Katie facts…',
+    'experience': 'installing experience modules…',
+    'projects':   'compiling projects…',
+    'awards':     'buffing the trophy shelf…',
+    'contact':    'assembly complete! say hi',
+  };
+  const CLICK_LINES = [
+    'beep boop!',
+    '01101000 01101001 (that\'s "hi")',
+    'ERROR: too much curiosity detected',
+    'fun fact: Katie plays squash',
+    'I was built with scroll power',
+  ];
+
+  if (REDUCED_MOTION) {
+    slices.forEach(s => s.classList.add('placed'));
+    fill.style.width = '100%';
+    label.textContent = 'BUILD 100%';
+    rig.classList.add('complete');
+  } else {
+    let ticking = false;
+    function update() {
+      ticking = false;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const p = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 1;
+      slices.forEach((s, i) => s.classList.toggle('placed', p >= THRESHOLDS[i]));
+      fill.style.width = (p * 100) + '%';
+      label.textContent = 'BUILD ' + Math.round(p * 100) + '%';
+      rig.classList.toggle('complete', p >= THRESHOLDS[3]);
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+  }
+
+  let lastLine = 'hi! I get built as you scroll';
+  function say(text) {
+    lastLine = text;
+    bubbleText.textContent = text;
+    bubble.classList.remove('pop');
+    void bubble.offsetWidth; /* restart animation */
+    bubble.classList.add('pop');
+  }
+
+  /* ---- open/close toggle ---- */
+  let rigOpen = false;
+  try { rigOpen = localStorage.getItem('roboOpen') === '1'; } catch (e) {}
+  function setRigOpen(open, replay) {
+    rigOpen = open;
+    rig.classList.toggle('closed', !open);
+    toggleBtn.classList.toggle('open', open);
+    toggleBtn.setAttribute('aria-pressed', open);
+    try { localStorage.setItem('roboOpen', open ? '1' : '0'); } catch (e) {}
+    if (open) say(lastLine);
+    if (open && replay && !REDUCED_MOTION) {
+      /* replay the fly-in, staggered, for pieces already earned */
+      const placedNow = [...slices].map(s => s.classList.contains('placed'));
+      slices.forEach(s => { s.classList.remove('placed'); s.style.transitionDelay = ''; });
+      void rig.offsetWidth;
+      slices.forEach((s, i) => {
+        if (placedNow[i]) {
+          s.style.transitionDelay = (i * 0.15) + 's';
+          s.classList.add('placed');
+        }
+      });
+      setTimeout(() => slices.forEach(s => { s.style.transitionDelay = ''; }), 1400);
+    }
+  }
+  toggleBtn.addEventListener('click', () => setRigOpen(!rigOpen, true));
+  document.getElementById('robo-close').addEventListener('click', () => setRigOpen(false, false));
+  setRigOpen(rigOpen, false);
+
+  /* fires when a section crosses the middle band of the viewport
+     (threshold-based ratios never trigger on sections taller than it) */
+  const sectionObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && SECTION_LINES[e.target.id]) {
+        say(SECTION_LINES[e.target.id]);
+      }
+    });
+  }, { threshold: 0, rootMargin: '-45% 0px -45% 0px' });
+  Object.keys(SECTION_LINES).forEach(id => {
+    const el = document.getElementById(id);
+    if (el) sectionObs.observe(el);
+  });
+
+  let clickIdx = 0;
+  stage.addEventListener('click', () => {
+    say(CLICK_LINES[clickIdx % CLICK_LINES.length]);
+    clickIdx++;
+    stage.classList.remove('boing');
+    void stage.offsetWidth;
+    stage.classList.add('boing');
+  });
+})();
+
+/* ====================================================================
+   PROJECT CARD TILT (fine pointers only)
+   ==================================================================== */
+if (!REDUCED_MOTION && window.matchMedia('(pointer: fine)').matches) {
+  document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      card.style.setProperty('--rx', (-y * 5) + 'deg');
+      card.style.setProperty('--ry', (x * 6) + 'deg');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.setProperty('--rx', '0deg');
+      card.style.setProperty('--ry', '0deg');
+    });
+  });
 }
-updateCountdown();
-setInterval(updateCountdown, 1000);
 
 /* ---- Init ---- */
 document.addEventListener('DOMContentLoaded', () => {
   ['carousel-bio','carousel1','carousel2','carousel3','carousel4'].forEach(initCarousel);
-  initCompanion();
 });
-
-/* ====================================================================
-   PIXEL COMPANION
-   Character: two CSS sprite layers (base + longhair), 96×64px per frame
-   displayed at 3× scale. Item: 16×16 Kyrise icon at 4× scale floats
-   above-right of the character. Section detection via IntersectionObserver.
-   ==================================================================== */
-function initCompanion() {
-
-  const SPECS = { idle:[9,864], walk:[8,768], carry:[8,768], doing:[8,768] };
-  const SECTIONS = [
-    { id:'header',     pose:'idle'  },
-    { id:'about-me',   pose:'idle'  },
-    { id:'experience', pose:'carry' },
-    { id:'projects',   pose:'doing' },
-    { id:'awards',     pose:'idle'  },
-    { id:'contact',    pose:'idle'  },
-  ];
-
-  const companion = document.createElement('div');
-  companion.id = 'pixel-companion';
-  companion.setAttribute('aria-hidden','true');
-  companion.innerHTML = `<div class="pc-sprite" id="pc-sprite">
-    <div class="pc-layer pc-base" id="pc-base"></div>
-    <div class="pc-layer pc-hair" id="pc-hair"></div>
-  </div>`;
-  document.body.appendChild(companion);
-
-  const sprite = document.getElementById('pc-sprite');
-  const base   = document.getElementById('pc-base');
-  const hair   = document.getElementById('pc-hair');
-
-  let active = false;
-  let cx = window.innerWidth/2, cy = window.innerHeight/2;
-  let tx = cx, ty = cy;
-  let facingLeft = false, moving = false, moveTimer = null, sectionPose = 'idle';
-  const LERP = 0.25, FW = 96, FH = 64, SCALE = 3;
-
-  function applyAnim(pose, isWalking) {
-    const key = isWalking ? (pose === 'idle' ? 'walk' : pose) : pose;
-    const [frames, w] = SPECS[key] || SPECS.idle;
-    base.style.backgroundImage = `url(images/sprites/base_${key}_strip${frames}.png)`;
-    hair.style.backgroundImage = `url(images/sprites/longhair_${key}_strip${frames}.png)`;
-    base.style.backgroundSize = hair.style.backgroundSize = `${w}px ${FH}px`;
-    const anim = `pc-kf-${w} ${frames*85}ms steps(${frames}) infinite`;
-    base.style.animation = hair.style.animation = anim;
-    if (!document.getElementById('pc-kf-'+w)) {
-      const s = document.createElement('style');
-      s.id = 'pc-kf-'+w;
-      s.textContent = `@keyframes pc-kf-${w}{from{background-position-x:0}to{background-position-x:-${w}px}}`;
-      document.head.appendChild(s);
-    }
-  }
-
-  function updateAnim() {
-    applyAnim(sectionPose, moving);
-    sprite.style.transform = `scale(${facingLeft ? -SCALE : SCALE}, ${SCALE})`;
-  }
-
-  document.addEventListener('mousemove', e => {
-    if (!active) return;
-    const prevTx = tx;
-    tx = e.clientX; ty = e.clientY;
-    if (Math.abs(tx - prevTx) > 2) facingLeft = tx < prevTx;
-    if (!moving) { moving = true; updateAnim(); }
-    clearTimeout(moveTimer);
-    moveTimer = setTimeout(() => { moving = false; updateAnim(); }, 180);
-  });
-
-  function tick() {
-    if (!active) return;
-    cx += (tx - cx) * LERP;
-    cy += (ty - cy) * LERP;
-    /*
-     * transform-origin defaults to "center" (50% 50%) of the layout div.
-     * Scale from center means the visual center stays at the layout center.
-     * Layout center = (left + FW/2, top + FH/2).
-     * Set that equal to cursor: left = cx - FW/2, top = cy - FH/2.
-     * Character will appear centered on the cursor regardless of scale.
-     */
-    companion.style.left = Math.round(cx - FW/2) + 'px';
-    companion.style.top  = Math.round(cy - FH/2 - 40) + 'px';
-    requestAnimationFrame(tick);
-  }
-
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (!e.isIntersecting) return;
-      const found = SECTIONS.find(s => s.id === e.target.id);
-      if (found && found.pose !== sectionPose) {
-        sectionPose = found.pose;
-        if (active) updateAnim();
-      }
-    });
-  }, { threshold: 0.25 });
-
-  SECTIONS.forEach(s => { const el = document.getElementById(s.id); if (el) obs.observe(el); });
-
-  const toggleBtn = document.getElementById('companion-toggle');
-  toggleBtn.addEventListener('click', () => {
-    active = !active;
-    toggleBtn.classList.toggle('on', active);
-    companion.style.display = active ? 'block' : 'none';
-    if (active) {
-      cx = tx = window.innerWidth/2;
-      cy = ty = window.innerHeight/2;
-      updateAnim();
-      requestAnimationFrame(tick);
-    }
-  });
-}
 </script>
 </body>
 </html>
