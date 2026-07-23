@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <canvas id="warp-field" aria-hidden="true"></canvas>
 
 <!-- ============================================================
      NAVIGATION
@@ -42,6 +43,18 @@
     </button>
   </div>
 </header>
+
+<!-- ============================================================
+     LINKEDIN HIGHLIGHTS TICKER
+     ============================================================ -->
+<section id="highlights" class="linkedin-highlights" aria-label="LinkedIn highlights from the last few months">
+  <div class="linkedin-highlights-inner">
+    <span class="linkedin-highlights-label"><span class="linkedin-logo-wrap"><img src="images/contact/linkedin.png" alt=""></span> LinkedIn highlights</span>
+    <a href="https://www.linkedin.com/posts/katherine-langille_akwaaba-from-ghana-after-a-month-of-activity-7466597098788900865-wstZ" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🇬🇭</span> Akwaaba from Ghana <b>↗</b></a>
+    <a href="https://www.linkedin.com/posts/katherine-langille_this-past-weekend-my-team-and-i-had-the-activity-7455767930077868032-ICeP" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🏆</span> A big weekend with my team <b>↗</b></a>
+    <a href="https://www.linkedin.com/posts/katherine-langille_480-student-athletes-named-to-2024-2025-academic-activity-7391838267681357824-W3_E" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🥇</span> Academic All-Canadian <b>↗</b></a>
+  </div>
+</section>
 
 <!-- ============================================================
      HERO
@@ -94,9 +107,6 @@
 
       <!-- Signal1 -->
       <article class="exp-card reveal">
-        <div class="exp-single-img">
-          <img src="images/experience/signal1.png" alt="Signal1" class="exp-img" loading="lazy" decoding="async">
-        </div>
         <div class="exp-header">
           <div class="exp-title-block">
             <span class="exp-company">Signal1</span>
@@ -106,6 +116,9 @@
             <span class="exp-date">Jun. 2026 – Present</span>
             <span class="exp-location">Toronto, ON</span>
           </div>
+        </div>
+        <div class="exp-single-img exp-logo-frame">
+          <img src="images/experience/signal1.png" alt="Signal1" class="exp-img" loading="lazy" decoding="async">
         </div>
         <div class="skill-tags">
           <span class="skill-tag">Machine Learning</span>
@@ -323,6 +336,60 @@
     <h2 class="section-title">Projects <span class="title-note">things I've built (and broken, and rebuilt)</span></h2>
     <div class="projects-grid">
 
+      <!-- Praxis, 2026 -->
+      <article class="project-card project-card-featured reveal">
+        <div class="project-photo-stack">
+          <img src="images/projects/praxis-demo.jpg" alt="Praxis team presenting their project" class="project-img project-img-main" loading="lazy" decoding="async">
+          <img src="images/projects/praxis-team.jpg" alt="The Praxis team at the hackathon" class="project-img project-img-secondary" loading="lazy" decoding="async">
+          <img src="images/projects/praxis-vr.jpg" alt="Katie testing immersive hardware at the hackathon" class="project-img project-img-tertiary" loading="lazy" decoding="async">
+        </div>
+        <div class="project-body">
+          <div class="project-title-row">
+            <h3>Praxis</h3>
+            <span class="project-prize">2 Prizes</span>
+            <span class="project-year">2026</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Rehabilitation</span>
+            <span class="skill-tag">Motion Tracking</span>
+            <span class="skill-tag">Immersive Tech</span>
+          </div>
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
+            <span>Read more</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="collapsible-content">
+            <p>Praxis is a rehabilitation device designed to make therapy more engaging and measurable. Our team combined immersive interaction with motion tracking to turn a therapeutic exercise into a more intuitive experience, with useful performance feedback built into the experience.<br><br>Recognized with <em>two prizes</em>. <a href="https://devpost.com/software/praxis-41b68v" target="_blank" rel="noreferrer">View the project</a>.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ALIFE Paper, 2026 -->
+      <article class="project-card reveal">
+        <div class="project-img-wrap">
+          <img src="images/projects/alife-fibrosis-snapshots.png" alt="Spatial snapshots of an SA wave propagating through fibrotic tissue" class="project-img" loading="lazy" decoding="async">
+        </div>
+        <div class="project-body">
+          <div class="project-title-row">
+            <h3>Modeling SA Waves in Fibrotic Tissue</h3>
+            <span class="project-prize">Talk accepted</span>
+            <span class="project-year">2026</span>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">Artificial Life</span>
+            <span class="skill-tag">Computational Modeling</span>
+            <span class="skill-tag">Cardiac Electrophysiology</span>
+          </div>
+          <button class="collapsible-header" aria-expanded="false" onclick="toggleCollapsible(this)">
+            <span>Read more</span>
+            <span class="toggle-icon">▼</span>
+          </button>
+          <div class="collapsible-content">
+            <p>Authored a paper investigating how sinoatrial action-potential waves propagate through fibrotic tissue. The work uses spatial simulations to compare wave behaviour over time and make the effect of different fibrosis structures visible.<br><br>Accepted as a talk at the <em>ALIFE 2026 Conference</em>. <a href="ALIFE2026.pdf" target="_blank" rel="noreferrer">Read the paper</a> · <a href="https://www.youtube.com/watch?v=Wquc6hId-yA" target="_blank" rel="noreferrer">Watch the talk</a>.</p>
+          </div>
+        </div>
+      </article>
+
       <!-- Ghana Field Course, 2026 -->
       <article class="project-card reveal">
         <div class="project-img-wrap">
@@ -446,7 +513,7 @@
           </button>
           <div class="collapsible-content">
             <p>As part of a three-person team, I engineered a <strong>low-cost myoelectric prosthetic hand</strong> capable of real-time grasp and object manipulation using forearm EMG signals. I designed and implemented the <strong>electrical system and signal processing pipeline</strong>, amplifying, filtering, and digitizing weak EMG signals through an Arduino to enable responsive control.<br><br>
-            The mechanical design involved a <strong>tendon-driven whippletree mechanism</strong> that ensured even force distribution across fingers. <a href="https://www.youtube.com/watch?v=BJboveokN0o" target="_blank">Watch demo</a></p>
+            The mechanical design involved a <strong>tendon-driven whippletree mechanism</strong> that ensured even force distribution across fingers. <a href="https://www.youtube.com/watch?v=BJboveokN0o" target="_blank" rel="noreferrer">Watch the prosthetic hand demo</a>.</p>
           </div>
         </div>
       </article>
@@ -673,6 +740,13 @@
     <h2 class="section-title">Awards &amp; Honours <span class="title-note">a shelf of shiny things</span></h2>
     <div class="awards-list">
 
+      <div class="award-item award-item-featured reveal">
+        <span class="award-year">2026</span>
+        <span class="award-name">Hack the 6ix Hackathon</span>
+        <span class="award-prize-tag">1st Place</span>
+        <a href="https://devpost.com/software/praxis-41b68v" class="award-link" target="_blank" rel="noreferrer">Learn more</a>
+      </div>
+
       <div class="award-item reveal">
         <span class="award-year">2026</span>
         <span class="award-name">Bio-Engineering, Ontario Engineering Competition</span>
@@ -719,7 +793,7 @@
         <span class="award-name">University of Waterloo President's Scholarship of Distinction</span>
       </div>
       <div class="award-item reveal">
-        <span class="award-year">2023–</span>
+        <span class="award-year">2023–2026</span>
         <span class="award-name">Dean's Honours List</span>
       </div>
 
@@ -791,6 +865,133 @@
      ============================================================ -->
 <script>
 const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---- Cursor-warped field ---- */
+(function initWarpField() {
+  if (REDUCED_MOTION) return;
+  const canvas = document.getElementById('warp-field');
+  const context = canvas && canvas.getContext('2d');
+  if (!context) return;
+
+  const pointer = { x: -9999, y: -9999, tx: -9999, ty: -9999 };
+  let width = 0, height = 0, pixelRatio = 1, frame;
+
+  function resize() {
+    pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width * pixelRatio;
+    canvas.height = height * pixelRatio;
+    context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
+  }
+
+  function warp(x, y) {
+    const dx = x - pointer.x;
+    const dy = y - pointer.y;
+    const distance = Math.hypot(dx, dy);
+    const influence = Math.exp(-distance / 155) * 30;
+    return { x: x + (dx / (distance || 1)) * influence, y: y + (dy / (distance || 1)) * influence };
+  }
+
+  function draw() {
+    pointer.x += (pointer.tx - pointer.x) * .09;
+    pointer.y += (pointer.ty - pointer.y) * .09;
+    context.clearRect(0, 0, width, height);
+    context.strokeStyle = 'rgba(23,24,23,.17)';
+    context.lineWidth = 1;
+    const step = 42;
+    const detail = 8;
+    for (let x = -step; x < width + step; x += step) {
+      context.beginPath();
+      for (let y = -step; y < height + step; y += detail) {
+        const point = warp(x, y);
+        y === -step ? context.moveTo(point.x, point.y) : context.lineTo(point.x, point.y);
+      }
+      context.stroke();
+    }
+    for (let y = -step; y < height + step; y += step) {
+      context.beginPath();
+      for (let x = -step; x < width + step; x += detail) {
+        const point = warp(x, y);
+        x === -step ? context.moveTo(point.x, point.y) : context.lineTo(point.x, point.y);
+      }
+      context.stroke();
+    }
+    frame = requestAnimationFrame(draw);
+  }
+
+  window.addEventListener('pointermove', event => {
+    pointer.tx = event.clientX;
+    pointer.ty = event.clientY;
+  }, { passive: true });
+  window.addEventListener('pointerleave', () => { pointer.tx = -9999; pointer.ty = -9999; });
+  window.addEventListener('resize', resize, { passive: true });
+  resize();
+  draw();
+  window.addEventListener('pagehide', () => cancelAnimationFrame(frame), { once: true });
+})();
+
+/* ---- Project masonry: chronological row order, independent column heights ---- */
+(function initProjectMasonry() {
+  const grid = document.querySelector('.projects-grid');
+  if (!grid) return;
+  const cards = [...grid.children].filter(child => child.classList.contains('project-card'));
+  if (!cards.length) return;
+
+  const leftColumn = document.createElement('div');
+  const rightColumn = document.createElement('div');
+  leftColumn.className = 'projects-masonry-column';
+  rightColumn.className = 'projects-masonry-column';
+
+  function arrangeProjects() {
+    if (window.innerWidth <= 800) {
+      grid.replaceChildren(...cards);
+      return;
+    }
+    grid.replaceChildren(leftColumn, rightColumn);
+    cards.forEach((card, index) => {
+      (index % 2 === 0 ? leftColumn : rightColumn).appendChild(card);
+    });
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(arrangeProjects, 120);
+  }, { passive: true });
+  arrangeProjects();
+})();
+
+/* ---- Experience masonry: the same alternating row order as Projects ---- */
+(function initExperienceMasonry() {
+  const timeline = document.querySelector('.timeline');
+  if (!timeline) return;
+  const cards = [...timeline.children].filter(child => child.classList.contains('exp-card'));
+  if (!cards.length) return;
+
+  const leftColumn = document.createElement('div');
+  const rightColumn = document.createElement('div');
+  leftColumn.className = 'experience-masonry-column';
+  rightColumn.className = 'experience-masonry-column';
+
+  function arrangeExperience() {
+    if (window.innerWidth <= 800) {
+      timeline.replaceChildren(...cards);
+      return;
+    }
+    timeline.replaceChildren(leftColumn, rightColumn);
+    cards.forEach((card, index) => {
+      (index % 2 === 0 ? leftColumn : rightColumn).appendChild(card);
+    });
+  }
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    window.clearTimeout(resizeTimer);
+    resizeTimer = window.setTimeout(arrangeExperience, 120);
+  }, { passive: true });
+  arrangeExperience();
+})();
 
 /* ---- Carousel ---- */
 let currentIndex = {};
