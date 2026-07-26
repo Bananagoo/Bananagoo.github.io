@@ -19,7 +19,6 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="warp-field" aria-hidden="true"></canvas>
 
 <!-- ============================================================
      NAVIGATION
@@ -45,18 +44,6 @@
 </header>
 
 <!-- ============================================================
-     LINKEDIN HIGHLIGHTS TICKER
-     ============================================================ -->
-<section id="highlights" class="linkedin-highlights" aria-label="LinkedIn highlights from the last few months">
-  <div class="linkedin-highlights-inner">
-    <span class="linkedin-highlights-label"><span class="linkedin-logo-wrap"><img src="images/contact/linkedin.png" alt=""></span> LinkedIn highlights</span>
-    <a href="https://www.linkedin.com/posts/katherine-langille_akwaaba-from-ghana-after-a-month-of-activity-7466597098788900865-wstZ" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🇬🇭</span> Akwaaba from Ghana <b>↗</b></a>
-    <a href="https://www.linkedin.com/posts/katherine-langille_this-past-weekend-my-team-and-i-had-the-activity-7455767930077868032-ICeP" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🏆</span> A big weekend with my team <b>↗</b></a>
-    <a href="https://www.linkedin.com/posts/katherine-langille_480-student-athletes-named-to-2024-2025-academic-activity-7391838267681357824-W3_E" target="_blank" rel="noreferrer"><span class="linkedin-highlight-icon" aria-hidden="true">🥇</span> Academic All-Canadian <b>↗</b></a>
-  </div>
-</section>
-
-<!-- ============================================================
      HERO
      ============================================================ -->
 <section id="header" class="hero">
@@ -64,7 +51,6 @@
     <div class="hero-text">
       <p class="hero-eyebrow">Biomedical Engineering @ UWaterloo</p>
       <h1>Hi, I'm <span class="hero-name">Katie.</span></h1>
-      <p class="hero-tagline">I build ML tools for healthcare, plus the occasional prosthetic hand, game, or puzzle.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">See my work</a>
         <a href="#contact" class="btn-ghost">Get in touch</a>
@@ -87,7 +73,7 @@
       <div class="about-copy">
         <span class="section-label">About Me</span>
         <p>I'm a Biomedical Engineering student at the University of Waterloo, happiest when I'm building something: machine learning pipelines for healthcare, prosthetic hands, experiment games, the occasional 3D-printed beaver. Away from the keyboard I play squash (the sport, though I'm fond of the vegetable too), respond with the campus first-aid team, and say yes to more community projects than strictly fit in a calendar.</p>
-        <p class="currently-line"><span>Currently:</span> doing AI/ML work in healthcare at Signal1 and enjoying Toronto summer runs.</p>
+        <p class="currently-line"><span>Currently</span> doing AI/ML work in healthcare at Signal1 and enjoying Toronto summer runs.</p>
       </div>
       <div class="about-photo">
         <img src="images/header/headshot.JPG" alt="Katie Langille">
@@ -806,7 +792,7 @@
      ============================================================ -->
 <section id="contact" class="section contact-section">
   <div class="container">
-    <h2 class="section-title centered">Get in Touch <span class="title-note">my inbox is friendly</span></h2>
+    <h2 class="section-title centered">Get in Touch</h2>
     <div class="contact-grid">
       <a href="https://www.linkedin.com/in/katherine-langille/" target="_blank" class="contact-card">
         <img src="images/contact/linkedin.png" alt="">
@@ -865,71 +851,6 @@
      ============================================================ -->
 <script>
 const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-/* ---- Cursor-warped field ---- */
-(function initWarpField() {
-  if (REDUCED_MOTION) return;
-  const canvas = document.getElementById('warp-field');
-  const context = canvas && canvas.getContext('2d');
-  if (!context) return;
-
-  const pointer = { x: -9999, y: -9999, tx: -9999, ty: -9999 };
-  let width = 0, height = 0, pixelRatio = 1, frame;
-
-  function resize() {
-    pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
-    width = window.innerWidth;
-    height = window.innerHeight;
-    canvas.width = width * pixelRatio;
-    canvas.height = height * pixelRatio;
-    context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-  }
-
-  function warp(x, y) {
-    const dx = x - pointer.x;
-    const dy = y - pointer.y;
-    const distance = Math.hypot(dx, dy);
-    const influence = Math.exp(-distance / 155) * 30;
-    return { x: x + (dx / (distance || 1)) * influence, y: y + (dy / (distance || 1)) * influence };
-  }
-
-  function draw() {
-    pointer.x += (pointer.tx - pointer.x) * .09;
-    pointer.y += (pointer.ty - pointer.y) * .09;
-    context.clearRect(0, 0, width, height);
-    context.strokeStyle = 'rgba(23,24,23,.17)';
-    context.lineWidth = 1;
-    const step = 42;
-    const detail = 8;
-    for (let x = -step; x < width + step; x += step) {
-      context.beginPath();
-      for (let y = -step; y < height + step; y += detail) {
-        const point = warp(x, y);
-        y === -step ? context.moveTo(point.x, point.y) : context.lineTo(point.x, point.y);
-      }
-      context.stroke();
-    }
-    for (let y = -step; y < height + step; y += step) {
-      context.beginPath();
-      for (let x = -step; x < width + step; x += detail) {
-        const point = warp(x, y);
-        x === -step ? context.moveTo(point.x, point.y) : context.lineTo(point.x, point.y);
-      }
-      context.stroke();
-    }
-    frame = requestAnimationFrame(draw);
-  }
-
-  window.addEventListener('pointermove', event => {
-    pointer.tx = event.clientX;
-    pointer.ty = event.clientY;
-  }, { passive: true });
-  window.addEventListener('pointerleave', () => { pointer.tx = -9999; pointer.ty = -9999; });
-  window.addEventListener('resize', resize, { passive: true });
-  resize();
-  draw();
-  window.addEventListener('pagehide', () => cancelAnimationFrame(frame), { once: true });
-})();
 
 /* ---- Project masonry: chronological row order, independent column heights ---- */
 (function initProjectMasonry() {
