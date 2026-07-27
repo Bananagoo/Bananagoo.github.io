@@ -75,7 +75,7 @@ button { font: inherit; }
 /* About */
 .about-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(220px,.6fr); gap: clamp(36px, 9vw, 140px); align-items: center; }
 .about-copy > p:not(.currently-line) { margin: 0 0 20px; max-width: 690px; font-size: clamp(18px, 2vw, 23px); line-height: 1.55; letter-spacing: -.035em; }
-.currently-line { max-width: 690px; margin: 20px 0 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
+.currently-line { max-width: 690px; margin: 20px 0 0; color: var(--blue); font-size: 15px; line-height: 1.6; }
 .about-photo { position: relative; max-width: 290px; justify-self: center; }
 .about-photo::before { content: ''; position: absolute; inset: -15px 13px 15px -15px; background: var(--acid); transform: rotate(4deg); z-index: -1; }
 .about-photo img { width: 100%; aspect-ratio: .82; object-fit: cover; filter: grayscale(1) contrast(1.05); }
