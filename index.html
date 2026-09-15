@@ -15,7 +15,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;1,14..32,400&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,7 +33,7 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li class="nav-resume-mobile-item"><a href="Katherine_Resume_2026_August.pdf" target="_blank" class="nav-resume-mobile-link">Resume</a></li>
+        <li class="nav-resume-mobile-item"><a href="Katherine_Resume.pdf" target="_blank" class="nav-resume-mobile-link">Resume</a></li>
       </ul>
     </nav>
     <a href="Katherine_Resume_2026_August.pdf" target="_blank" class="btn-resume">Resume</a>
@@ -49,7 +49,7 @@
 <section id="header" class="hero">
   <div class="hero-inner">
     <div class="hero-text">
-      <p class="hero-eyebrow">Biomedical Engineering @ UWaterloo</p>
+      <p class="hero-eyebrow">Biomedical engineering &middot; Waterloo &middot; Signal1</p>
       <h1>Hi, I'm <span class="hero-name">Katie.</span></h1>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">See my work</a>
@@ -76,7 +76,7 @@
         <p class="currently-line">Currently working on healthcare AI at Signal1 and making the most of Toronto summer runs.</p>
       </div>
       <div class="about-photo">
-        <img src="images/header/headshot.JPG" alt="Katie Langille">
+        <img src="images/header/headshot.JPG" alt="Katie Langille" loading="lazy" decoding="async">
         <span class="photo-note" aria-hidden="true">that's me!</span>
       </div>
     </div>
@@ -795,15 +795,15 @@
     <h2 class="section-title centered">Get in Touch</h2>
     <div class="contact-grid">
       <a href="https://www.linkedin.com/in/katherine-langille/" target="_blank" class="contact-card">
-        <img src="images/contact/linkedin.png" alt="">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 1 0 5 8.5a2.5 2.5 0 0 0-.02-5zM3 9.5h4v11H3v-11zm7 0h3.8v1.5h.05c.53-.95 1.83-1.95 3.77-1.95 4.03 0 4.78 2.5 4.78 5.76v5.69h-4v-5.05c0-1.2-.02-2.75-1.75-2.75-1.75 0-2.02 1.3-2.02 2.66v5.14h-4v-11z"/></svg>
         <span>linkedin.com/in/katherine-langille</span>
       </a>
       <a href="mailto:klangill@uwaterloo.ca" class="contact-card">
-        <img src="images/contact/email.png" alt="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2"/><path d="m3 6 9 6.5L21 6"/></svg>
         <span>klangill@uwaterloo.ca</span>
       </a>
       <a href="tel:+16136688713" class="contact-card">
-        <img src="images/contact/phone.png" alt="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5z"/></svg>
         <span>(613) 668-8713</span>
       </a>
     </div>
@@ -817,7 +817,7 @@
   <div class="footer-inner">
     <p class="footer-name">Katherine Langille
       <button id="robo-toggle" aria-pressed="false" aria-label="A little robot friend">
-        <img src="images/robot/head_happy.webp" alt="">
+        <img src="images/robot/head_happy.webp" alt="" loading="lazy" decoding="async">
       </button>
     </p>
     <p class="footer-copy">&copy; 2026 · powered by curiosity</p>
@@ -831,13 +831,13 @@
   <button class="robo-close" id="robo-close" aria-label="Hide robot">✕</button>
   <div class="robo-bubble" id="robo-bubble"><span id="robo-bubble-text">hi! I get built as you scroll</span></div>
   <button class="robo-stage" id="robo-stage" aria-label="Robot mascot" tabindex="-1">
-    <img class="robo-ghost" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-lleg" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-rleg" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-harm" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-warm" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-body" src="images/robot/robot_full.webp" alt="">
-    <img class="robo-slice robo-slice-head" src="images/robot/robot_full.webp" alt="">
+    <img class="robo-ghost" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-lleg" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-rleg" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-harm" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-warm" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-body" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
+    <img class="robo-slice robo-slice-head" src="images/robot/robot_full.webp" alt="" loading="lazy" decoding="async">
   </button>
   <div class="robo-platform"></div>
   <div class="robo-meter">
@@ -922,7 +922,8 @@ function initCarousel(id) {
   if (!el) return;
   const imgs = el.querySelectorAll('.carousel-image');
   if (!imgs.length) return;
-  imgs[0].removeAttribute('loading'); /* lazy + display:none never loads */
+  /* imgs[0] is display:block below, so native lazy-loading works for it.
+     Hidden images (2..n) get their loading attr stripped in showImage(). */
   imgs[0].style.display = 'block';
   currentIndex[id] = 0;
   const dots = document.createElement('div');
